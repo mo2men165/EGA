@@ -2,24 +2,23 @@ import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i182/routing';
 
-// Export a wrapper middleware function that handles the root path
+// This function handles the redirects and sets up the locale
 export default function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
-  console.log(`Middleware running for path: ${pathname}`);
+  const { pathname } = request.nextUrl;
   
-  // Check if we're at the root path
+  // Redirect root path `/` to default locale
   if (pathname === '/' || pathname === '') {
-    console.log('Root path detected, redirecting to /en');
-    // Create a URL for redirection
-    const url = new URL('/en', request.url);
+    const defaultLocale = routing.locales[0]; // usually 'en'
+    const url = new URL(`/${defaultLocale}`, request.url);
     return NextResponse.redirect(url);
   }
   
-  // For all other routes, use the next-intl middleware
+  // Use intlMiddleware for other paths
   return createMiddleware(routing)(request);
 }
 
-// Make sure to include the root path in the matcher
+// Make sure this matcher is correctly configured
 export const config = {
-  matcher: ['/((?!api|trpc|_next|_vercel|.*\\..*).*)', '/']
+  // Match all paths except static assets, api routes, etc.
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
