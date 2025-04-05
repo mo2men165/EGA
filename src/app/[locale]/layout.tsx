@@ -3,6 +3,8 @@ import "@/app/globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import {notFound} from 'next/navigation';
 import { routing } from "@/i182/routing";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ega-site.com"), // Replace with your actual domain
@@ -49,7 +51,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
