@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
-
+import {NextConfig} from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 };
+ 
+const withNextIntl = createNextIntlPlugin({
+  requestConfig: './src/i182/request.ts' // Adjusted path
+});
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

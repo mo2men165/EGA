@@ -1,0 +1,2100 @@
+  {
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact",
+        "getQuote": "Get a Quote",
+        "branding": "Branding & Identity",
+        "media": "Media Production",
+        "software": "Software & Web Solutions",
+        "socialMedia": "Social Media Marketing",
+        "performance": "Performance Marketing"        
+      },
+    "footer": {
+        "description": "Transforming digital presence with innovative marketing strategies that drive growth and elevate brands.",
+        "quickLinks": "Quick Links",
+        "services": "Services",
+        "aboutUs": "About Us",
+        "caseStudies": "Case Studies",
+        "blog": "Blog",
+        "contactUs": "Contact Us",
+        "branding": "Branding & Identity",
+        "mediaProduction": "Media Production",
+        "software": "Software & Web Solutions",
+        "performance": "Performance Marketing",
+        "socialMedia": "Social Media Marketing",
+        "contact": "Contact",
+        "address": "The central Axis, the 2nd district neighborhood 2 building 383, 4th floor, 6th of October",
+        "rightsReserved": "All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "sitemap": "Sitemap"
+      },
+    "hero": {
+      "titleLine1": "Transform Your",
+      "titleLine2": "Digital Presence",
+      "description": "Strategic marketing solutions that drive growth and elevate your brand in the digital landscape.",
+      "getStarted": "Get Started",
+      "ourServices": "Our Services",
+      "scrollText": "Scroll to explore"
+    },
+    "cta": {
+      "title": "Growing Businesses Through Digital Excellence",
+      "subtitle": "Join hundreds of satisfied clients who have transformed their online presence with our expert digital marketing solutions.",
+      "clientsLabel": "Happy Clients",
+      "projectsLabel": "Projects Completed",
+      "countriesLabel": "Countries Served",
+      "satisfactionLabel": "Client Satisfaction",
+      "contactButton": "Contact Us Today",
+      "learnMoreButton": "Learn More"
+    },
+    "servicesOverview": {
+      "tagline": "Our Services",
+      "title": "Comprehensive Digital Solutions",
+      "description": "We offer a wide range of digital services to help your business grow and succeed in the online world.",
+      "viewAllServices": "View All Services",
+      "learnMore": "Learn More",
+      "services": {
+        "branding": {
+          "title": "Branding & Identity",
+          "description": "Crafting a distinctive brand through strategic identity elements."
+        },
+        "mediaProduction": {
+          "title": "Media Production",
+          "description": "Bringing your vision to life with high-quality media production."
+        },
+        "softwareWeb": {
+          "title": "Software & Web Solutions",
+          "description": "Comprehensive digital solutions tailored to your business needs."
+        },
+        "socialMediaMarketing": {
+          "title": "Social Media Marketing",
+          "description": "Comprehensive social media strategy to grow your online presence."
+        },
+        "performanceMarketing": {
+          "title": "Performance Marketing",
+          "description": "Driving results with data-driven performance marketing strategies."
+        }
+      }
+    },
+    "HomePage": {
+    "metaTitle": "EGA Marketing Agency",
+    "metaDescription": "The leading marketing agency in Egypt. Give your brand EGO with innovative strategies, creative design, and data-driven campaigns.",
+    "ogImageAlt": "EGA Marketing Agency - Transform Your Brand"
+  },
+    "valueProposition": {
+      "title": "Unleashing Potential Through Innovation",
+      "description": "Our platform combines cutting-edge technology with deep industry expertise to help businesses transform their operations and achieve unprecedented growth.",
+      "learnMoreButton": "Learn More",
+      "ctaTitle": "Ready to Transform Your Business?",
+      "ctaDescription": "Join thousands of forward-thinking companies that are already revolutionizing their industries with our solutions.",
+      "ctaButton": "Get Started Today",
+      "features": {
+        "strategy": {
+          "title": "Strategic Planning",
+          "description": "Our comprehensive strategic planning process helps you identify opportunities, mitigate risks, and create roadmaps for sustainable growth in a rapidly changing marketplace.",
+          "stats": {
+            "satisfaction": "Client Satisfaction",
+            "increase": "Revenue Increase"
+          }
+        },
+        "technology": {
+          "title": "Advanced Technology",
+          "description": "Leverage state-of-the-art technology solutions built on cloud-native architecture, ensuring scalability, performance, and reliability for your mission-critical operations.",
+          "stats": {
+            "monitoring": "Support & Monitoring",
+            "uptime": "System Uptime"
+          }
+        },
+        "personalization": {
+          "title": "Tailored Experience",
+          "description": "Our AI-powered personalization engine creates unique experiences for each user, increasing engagement and driving conversions through intelligent content recommendations.",
+          "stats": {
+            "engagement": "User Engagement",
+            "conversion": "Conversion Increase"
+          }
+        },
+        "analytics": {
+          "title": "Data-Driven Insights",
+          "description": "Comprehensive analytics and reporting tools provide deep visibility into your operations and customer behavior, enabling informed decision-making at every level.",
+          "stats": {
+            "transparent": "Data Transparency",
+            "improvement": "Decision Improvement"
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "description": "Discover how we've helped businesses like yours transform their digital presence and achieve remarkable results.",
+      "viewAllButton": "View All Testimonials",
+      "trustedByTitle": "Trusted by Industry Leaders",
+      "ctaTitle": "Ready to Experience Results Like These?",
+      "ctaDescription": "Join hundreds of satisfied clients who have transformed their digital presence with our expertise.",
+      "ctaButton": "Get Started Today",
+      "clients": {
+        "client1": {
+          "name": "Mohamed Ibrahim",
+          "position": "CEO & Founder",
+          "company": "FANCY FIT",
+          "quote": "Working with EGA was a game-changer for Fancy Fit. Their team brought fresh, innovative ideas that elevated our brand presence across social media. From strategic campaigns to compelling content and eye-catching visuals, they perfectly captured the essence of our classic men's fashion. Their expertise in branding and storytelling helped us connect with our audience on a whole new level, driving engagement and boosting our online presence. We highly recommend EGA to any brand looking to make a lasting impact in the digital space."
+        },
+        "client2": {
+          "name": "Ali El-Sayed",
+          "position": "CEO & Founder",
+          "company": "First Choice",
+          "quote": "Working with this team was a game-changer for First Choice. They took our brand to the next level with a fresh, professional identity that truly represents our commitment to quality and freshness. The packaging design, marketing materials, and social media strategy they developed helped us stand out in international markets and attract new business opportunities. Their creativity, attention to detail, and dedication made a real impact on our growth. We couldn’t have asked for a better partner!"
+        },
+        "client3": {
+          "name": "Aisha Patel",
+          "position": "CEO",
+          "company": "Innovate Solutions",
+          "quote": "The rebranding campaign delivered by this agency perfectly captured our vision and values. The response from our clients has been overwhelmingly positive, and we've attracted a whole new segment of customers."
+        },
+        "client4": {
+          "name": "David Rodriguez",
+          "position": "Content Strategist",
+          "company": "Global Media",
+          "quote": "Their content strategy completely revolutionized our approach to audience engagement. The quality and consistency of the content have established us as thought leaders in our industry within just six months."
+        }
+      }
+    },
+    "caseStudies": {
+      "subheading": "Success Stories",
+      "title": "Driving Results That Speak For Themselves",
+      "description": "Discover how we've helped businesses across various industries achieve exceptional growth and success through strategic digital marketing campaigns.",
+      "clientLabel": "Client",
+      "imagePlaceholder": "Case Study Image",
+      "viewCaseButton": "View Full Case Study",
+      "viewAllButton": "View All Case Studies",
+      "cases": {
+          "case1": {
+  "title": "Creative Campaign Boosts Fancy’s Brand Recognition & Sales",
+  "client": "Fancy",
+  "industry": "Men’s Fashion – Classic Shirts",
+  "description": "We crafted a high-impact campaign for Fancy, using social media and striking visuals to highlight their premium shirts, driving engagement and sales.",
+  "results": {
+    "metric1": { "name": "Engagement Rate", "value": "+215%" },
+    "metric2": { "name": "Brand Awareness", "value": "+180%" },
+    "metric3": { "name": "Sales Lift", "value": "+135%" }
+  }
+          },
+          "case2": {
+            "title": "Revamping First Choice’s Brand Identity for Global Expansion",
+            "client": "First Choice",
+            "industry": "Fresh Produce Export",
+            "description": "We redesigned First Choice’s brand identity and digital presence, enhancing their appeal to international buyers and boosting export sales.",
+            "results": {
+              "metric1": { "name": "Engagement", "value": "+220%" },
+              "metric2": { "name": "Market Reach", "value": "+175%" },
+              "metric3": { "name": "Export Growth", "value": "+140%" }
+            }
+          },
+                  "case3": {
+          "title": "Local Restaurant Chain Expansion Strategy",
+          "client": "Urban Spice",
+          "industry": "Hospitality",
+          "description": "Urban Spice wanted to expand from 2 to 5 locations. We created a hyper-local marketing strategy across digital channels that drove awareness and foot traffic to new locations.",
+          "results": {
+            "metric1": {
+              "name": "Foot Traffic",
+              "value": "+163%"
+            },
+            "metric2": {
+              "name": "Local Searches",
+              "value": "+218%"
+            },
+            "metric3": {
+              "name": "Repeat Visits",
+              "value": "+78%"
+            }
+          }
+        }
+      }
+    },
+    "team": {
+      "subheading": "Meet Our Experts",
+      "title": "The Creative Minds Behind Our Success",
+      "description": "Our team combines expertise in digital marketing, design, and development to create exceptional results. Each member brings unique skills and perspectives to solve our clients' most challenging problems.",
+      "imagePlaceholder": "Photo",
+      "viewProfileButton": "View Profile",
+      "viewTeamButton": "Meet The Entire Team",
+      "members": {
+        "member1": {
+          "name": "Ahmad Hassan",
+          "role": "Chief Creative Officer",
+          "bio": "With over 10 years of experience in branding and creative direction, Ahmad leads our creative team with a passion for innovative design solutions.",
+          "expertise": {
+            "skill1": "Brand Strategy",
+            "skill2": "Creative Direction",
+            "skill3": "UI/UX Design"
+          }
+        },
+        "member2": {
+          "name": "Layla Ibrahim",
+          "role": "Digital Marketing Director",
+          "bio": "Layla specializes in developing data-driven marketing strategies that deliver measurable results across multiple digital channels.",
+          "expertise": {
+            "skill1": "SEO",
+            "skill2": "Content Marketing",
+            "skill3": "Analytics"
+          }
+        },
+        "member3": {
+          "name": "Omar Khalid",
+          "role": "Technical Lead",
+          "bio": "Omar brings technical expertise to our projects, ensuring seamless implementation of complex digital solutions and optimal performance.",
+          "expertise": {
+            "skill1": "Web Development",
+            "skill2": "E-commerce",
+            "skill3": "System Architecture"
+          }
+        },
+        "member4": {
+          "name": "Fatima Ali",
+          "role": "Client Success Manager",
+          "bio": "Fatima builds strong client relationships and ensures that every project exceeds expectations through careful management and communication.",
+          "expertise": {
+            "skill1": "Project Management",
+            "skill2": "Client Relations",
+            "skill3": "Strategy Development"
+          }
+        }
+      }
+    },
+    "latestBlogPosts": {
+        "title": "Latest Insights & Strategies",
+        "description": "Stay ahead of the curve with our latest marketing insights, case studies, and industry expertise. Get actionable strategies to elevate your brand.",
+        "readMore": "Read Article",
+        "viewAllButton": "View All Articles",
+        "newsletter": {
+          "title": "Subscribe to Our Newsletter",
+          "description": "Get the latest marketing tips and tactics delivered directly to your inbox weekly.",
+          "placeholder": "Enter your email address",
+          "button": "Subscribe",
+          "privacy": "We respect your privacy. Unsubscribe at any time."
+        },
+        "posts": {
+          "post1": {
+            "category": "Social Media",
+            "date": "March 15, 2025",
+            "title": "7 Advanced Social Media Strategies That Drive Engagement",
+            "excerpt": "Discover proven tactics to boost your social media engagement and convert followers into loyal customers.",
+            "author": {
+              "name": "Sarah Johnson",
+              "role": "Social Media Director"
+            }
+          },
+          "post2": {
+            "category": "SEO",
+            "date": "March 10, 2025",
+            "title": "How AI is Transforming SEO in 2025",
+            "excerpt": "Learn how artificial intelligence is reshaping search engine optimization and how to leverage it for your business.",
+            "author": {
+              "name": "Michael Chen",
+              "role": "SEO Specialist"
+            }
+          },
+          "post3": {
+            "category": "Content Marketing",
+            "date": "March 5, 2025",
+            "title": "The Psychology Behind Viral Content",
+            "excerpt": "Understand the psychological triggers that make content share-worthy and how to implement them in your strategy.",
+            "author": {
+              "name": "Jessica Wong",
+              "role": "Content Strategist"
+            }
+          },
+          "post4": {
+            "category": "Analytics",
+            "date": "February 28, 2025",
+            "title": "Mastering Marketing Attribution Models",
+            "excerpt": "A comprehensive guide to choosing and implementing the right attribution model for accurate ROI measurement.",
+            "author": {
+              "name": "David Martinez",
+              "role": "Analytics Lead"
+            }
+          }
+        }
+    },
+    "servicesPage": {
+      "metaTitle": "Our Services - EGA Marketing Agency",
+      "metaDescription": "Discover our comprehensive range of digital marketing services including branding, media production, performance marketing, social media, and web solutions.",
+      "title": "Our Services",
+      "description": "We offer a full spectrum of digital marketing services to help your business grow and succeed in the digital landscape.",
+      "organizationDescription": "EGA is a leading marketing agency in Egypt specializing in digital marketing solutions for businesses of all sizes.",
+      "hero": {
+        "subtitle": "Our Services",
+        "titleLine1": "Transforming Ideas",
+        "titleLine2": "Into Digital Reality",
+        "description": "We specialize in creating innovative digital solutions tailored to your business needs.",
+        "primaryCta": "Explore Services",
+        "secondaryCta": "Contact Us",
+        "serviceIcons": {
+          "0": "Branding",
+          "1": "Media Production",
+          "2": "Software & Web",
+          "3": "Social Media",
+          "4": "Performance Marketing"
+        }
+      },
+      "overview": {
+        "subtitle": "What We Do",
+        "title": "Comprehensive Digital Solutions",
+        "description1": "We provide end-to-end digital services to help your business grow and succeed.",
+        "description2": "Our team of experts is dedicated to delivering high-quality results.",
+        "exploreButton": "Explore More",
+        "stats": {
+          "projectsCompleted": {
+            "value": "30+",
+            "label": "Projects Completed"
+          },
+          "clientsServed": {
+            "value": "25+",
+            "label": "Clients Served"
+          },
+          "satisfaction": {
+            "value": "98%",
+            "label": "Client Satisfaction"
+          },
+          "expertiseYears": {
+            "value": "2+",
+            "label": "Years of Expertise"
+          }
+        }
+      },
+      "servicesList": {
+        "subtitle": "Our Offerings",
+        "title": "Services We Provide",
+        "description": "Discover our range of services designed to meet your business needs.",
+        "expandButton": "Learn More",
+        "collapseButton": "Collapse",
+        "learnMoreButton": "Learn More",
+        "tabs": {
+          "description": "Description",
+          "process": "Process",
+          "benefits": "Benefits",
+          "metrics": "Metrics"
+        },
+        "services": {
+          "branding": { 
+            "title": "Branding",
+            "description": "Crafting unique brand identities that resonate with your audience.",
+            "detailedDescription": "We create comprehensive branding strategies that include logo design, brand guidelines, and visual identity to ensure your brand stands out.",
+            "process": [
+              "Discovery and Research",
+              "Concept Development",
+              "Design and Refinement",
+              "Final Delivery"
+            ],
+            "benefits": [
+              "Increased brand recognition",
+              "Consistent brand messaging",
+              "Stronger emotional connection with your audience"
+            ],
+            "metrics": [
+              {
+                "label": "Brand Awareness",
+                "value": "+30%"
+              },
+              {
+                "label": "Customer Engagement",
+                "value": "+25%"
+              },
+              {
+                "label": "Market Reach",
+                "value": "+40%"
+              }
+            ],
+            "features": [
+              "Logo Design",
+              "Brand Guidelines",
+              "Visual Identity",
+              "Brand Strategy"
+            ]
+          },
+          "mediaProduction": {
+            "title": "Media Production",
+            "description": "High-quality video and audio production for your brand.",
+            "detailedDescription": "From concept to final cut, we produce engaging media content that captures your brand's essence and resonates with your audience.",
+            "process": [
+              "Pre-Production Planning",
+              "Shooting and Recording",
+              "Editing and Post-Production",
+              "Final Delivery"
+            ],
+            "benefits": [
+              "High-quality media content",
+              "Enhanced storytelling",
+              "Increased audience engagement"
+            ],
+            "metrics": [
+              {
+                "label": "Content Quality",
+                "value": "95%"
+              },
+              {
+                "label": "Engagement Rate",
+                "value": "+35%"
+              },
+              {
+                "label": "Production Speed",
+                "value": "2x Faster"
+              }
+            ],
+            "features": [
+              "Video Production",
+              "Audio Production",
+              "Animation",
+              "Post-Production"
+            ]
+          },
+          "softwareWeb": {
+            "title": "Software & Web Development",
+            "description": "Building scalable and user-friendly software and web applications.",
+            "detailedDescription": "We develop custom software and web solutions that are tailored to your business needs, ensuring scalability, security, and a seamless user experience.",
+            "process": [
+              "Requirement Analysis",
+              "Design and Prototyping",
+              "Development and Testing",
+              "Deployment and Maintenance"
+            ],
+            "benefits": [
+              "Scalable solutions",
+              "Enhanced user experience",
+              "Improved operational efficiency"
+            ],
+            "metrics": [
+              {
+                "label": "User Satisfaction",
+                "value": "98%"
+              },
+              {
+                "label": "Development Speed",
+                "value": "30% Faster"
+              },
+              {
+                "label": "System Uptime",
+                "value": "99.9%"
+              }
+            ],
+            "features": [
+              "Web Development",
+              "Mobile Apps",
+              "Custom Software",
+              "UI/UX Design"
+            ]
+          },
+          "socialMediaMarketing": {
+            "title": "Social Media Marketing",
+            "description": "Engaging social media strategies to grow your online presence.",
+            "detailedDescription": "We create and manage social media campaigns that drive engagement, increase followers, and boost your brand's online visibility.",
+            "process": [
+              "Strategy Development",
+              "Content Creation",
+              "Campaign Execution",
+              "Performance Analysis"
+            ],
+            "benefits": [
+              "Increased brand visibility",
+              "Higher engagement rates",
+              "Improved customer loyalty"
+            ],
+            "metrics": [
+              {
+                "label": "Follower Growth",
+                "value": "+50%"
+              },
+              {
+                "label": "Engagement Rate",
+                "value": "+40%"
+              },
+              {
+                "label": "Conversion Rate",
+                "value": "+20%"
+              }
+            ],
+            "features": [
+              "Content Creation",
+              "Social Media Management",
+              "Campaigns",
+              "Analytics"
+            ]
+          },
+          "performanceMarketing": {
+            "title": "Performance Marketing",
+            "description": "Data-driven marketing strategies to maximize ROI.",
+            "detailedDescription": "We leverage data and analytics to create performance marketing campaigns that deliver measurable results and maximize your return on investment.",
+            "process": [
+              "Audience Analysis",
+              "Campaign Planning",
+              "Execution and Optimization",
+              "Performance Reporting"
+            ],
+            "benefits": [
+              "Higher ROI",
+              "Targeted marketing",
+              "Data-driven decisions"
+            ],
+            "metrics": [
+              {
+                "label": "ROI Increase",
+                "value": "+50%"
+              },
+              {
+                "label": "Cost Per Acquisition",
+                "value": "-30%"
+              },
+              {
+                "label": "Conversion Rate",
+                "value": "+25%"
+              }
+            ],
+            "features": [
+              "SEO",
+              "PPC",
+              "Email Marketing",
+              "Conversion Optimization"
+            ]
+          }
+        }
+      },
+      "cta": {
+        "title": "Let's Build Something Great Together",
+        "description": "Get in touch with us to discuss your project and how we can help.",
+        "form": {
+          "nameLabel": "Your Name",
+          "namePlaceholder": "Ahmed Mohamed",
+          "emailLabel": "Your Email",
+          "emailPlaceholder": "ahmed@gmail.com",
+          "serviceLabel": "Service",
+          "servicePlaceholder": "Select a service",
+          "serviceOptions": {
+            "branding": "Branding",
+            "mediaProduction": "Media Production",
+            "softwareWeb": "Software & Web",
+            "socialMedia": "Social Media",
+            "performanceMarketing": "Performance Marketing"
+          },
+          "messageLabel": "Message",
+          "messagePlaceholder": "Tell us about your project...",
+          "submitButton": "Send Message"
+        },
+        "contactInfo": {
+          "title": "Contact Information",
+          "phone": "+20 1012333338 - +20 1023333576",
+          "email": "info@ega.com",
+          "address": "The central Axis, the 2nd district neighborhood 2 building 383, 4th floor, 6th of October",
+          "socialTitle": "Follow Us",
+          "hoursTitle": "Working Hours",
+          "hours": "Sun - Thu: 9 AM - 6 PM"
+        }
+      },
+      "pricing": {
+        "subtitle": "Pricing Plans",
+        "title": "Flexible Pricing for Every Business",
+        "description": "Choose a plan that fits your needs. Whether you're a startup or an enterprise, we've got you covered.",
+        "monthlyBilling": "Monthly",
+        "yearlyBilling": "Yearly",
+        "savingsLabel": "Save 20%",
+        "mostPopular": "Most Popular",
+        "includedFeatures": "Included Features",
+        "month": "month",
+        "year": "year",
+        "faqTitle": "Frequently Asked Questions",
+        "faq": {
+          "q1": "Can I switch plans later?",
+          "a1": "Yes, you can upgrade or downgrade your plan at any time.",
+          "q2": "Is there a free trial available?",
+          "a2": "Yes, we offer a 14-day free trial for all plans.",
+          "q3": "What payment methods do you accept?",
+          "a3": "We accept all major credit cards and PayPal."
+        },
+        "plans": {
+          "essential": {
+            "name": "Essential",
+            "description": "Perfect for small businesses and startups.",
+            "monthlyPrice": "$29",
+            "yearlyPrice": "$290",
+            "features": {
+              "feature1": "Up to 10 users",
+              "feature2": "Basic analytics",
+              "feature3": "Email support",
+              "feature4": "Access to all core features"
+            },
+            "cta": "Get Started"
+          },
+          "professional": {
+            "name": "Professional",
+            "description": "Ideal for growing businesses.",
+            "monthlyPrice": "$79",
+            "yearlyPrice": "$790",
+            "features": {
+              "feature1": "Up to 50 users",
+              "feature2": "Advanced analytics",
+              "feature3": "Priority email support",
+              "feature4": "Custom branding",
+              "feature5": "API access"
+            },
+            "cta": "Choose Plan"
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "description": "Tailored for large organizations.",
+            "price": "Custom",
+            "features": {
+              "feature1": "Unlimited users",
+              "feature2": "Dedicated account manager",
+              "feature3": "24/7 priority support",
+              "feature4": "Custom integrations",
+              "feature5": "Advanced security",
+              "feature6": "Personalized onboarding"
+            },
+            "cta": "Contact Us"
+          }
+        }
+      }
+    },
+    "brandingPage": {
+      "metaTitle": "Branding Services - EGA Marketing Agency",
+      "metaDescription": "Professional branding services to establish and strengthen your brand identity, including logo design, brand guidelines, and brand strategy.",  
+      "title": "Branding",
+      "description": "Crafting unique brand identities that resonate with your audience.",
+      "services": "Our Services",
+      "hero": {
+        "subtitle": "Branding & Identity",
+        "titleLine1": "Crafting Unique",
+        "titleLine2": "Brand Experiences",
+        "description": "We help businesses create memorable brand identities that resonate with their audience and stand out in the market.",
+        "primaryCta": "Start Your Project",
+        "secondaryCta": "See Our Work",
+        "stats": [
+          {
+            "value": "90%",
+            "label": "Guaranteed Increase in Sales"
+          },
+          {
+            "value": "98%",
+            "label": "Client Satisfaction"
+          },
+          {
+            "value": "2+",
+            "label": "Years of Expertise"
+          }
+        ]
+      },
+      "overview": {
+        "subtitle": "What We Offer",
+        "title": "Comprehensive Branding Solutions",
+        "description": "From brand strategy to visual identity, we provide end-to-end branding services tailored to your business needs.",
+        "learnMore": "Learn More",
+        "trustedBy": "Trusted by leading brands worldwide",
+        "cards": [
+          {
+            "title": "Brand Strategy",
+            "description": "Develop a clear and compelling brand strategy that aligns with your business goals.",
+            "linkId": "strategy"
+          },
+          {
+            "title": "Visual Identity",
+            "description": "Create a unique and memorable visual identity that resonates with your audience.",
+            "linkId": "visual-identity"
+          },
+          {
+            "title": "Brand Guidelines",
+            "description": "Establish consistent brand guidelines to maintain your brand's integrity across all platforms.",
+            "linkId": "guidelines"
+          }
+        ]
+      },
+      "process": {
+        "subtitle": "Our Process",
+        "title": "How We Build Your Brand",
+        "description": "Our proven process ensures that every step of your branding journey is seamless and effective.",
+        "keyBenefits": "Key Benefits",
+        "ctaButton": "Get Started",
+        "ctaDescription": "Ready to transform your brand? Let's get started!",
+        "steps": [
+          {
+            "title": "Discovery & Research",
+            "description": "We start by understanding your business, audience, and market to create a solid foundation for your brand.",
+            "benefits": [
+              "In-depth market analysis",
+              "Audience persona development",
+              "Competitor research",
+              "Brand positioning"
+            ]
+          },
+          {
+            "title": "Strategy Development",
+            "description": "We craft a tailored brand strategy that aligns with your vision and business objectives.",
+            "benefits": [
+              "Brand mission and values",
+              "Messaging framework",
+              "Brand architecture",
+              "Go-to-market strategy"
+            ]
+          },
+          {
+            "title": "Design & Execution",
+            "description": "Our design team brings your brand to life with stunning visuals and consistent branding elements.",
+            "benefits": [
+              "Logo design",
+              "Color palette",
+              "Typography",
+              "Visual assets"
+            ]
+          },
+          {
+            "title": "Implementation & Support",
+            "description": "We ensure your brand is implemented consistently across all touchpoints and provide ongoing support.",
+            "benefits": [
+              "Brand guidelines",
+              "Templates and assets",
+              "Training and workshops",
+              "Ongoing brand management"
+            ]
+          }
+        ]
+      },
+      "features": {
+        "subtitle": "Our Features",
+        "title": "What Makes Us Different",
+        "description": "We offer a comprehensive suite of branding services to help your business stand out.",
+        "comparisonTitle": "Compare Our Packages",
+        "comparisonDescription": "Choose the package that best suits your needs.",
+        "basicPackageButton": "Get Basic Package",
+        "premiumPackageButton": "Get Premium Package",
+        "comparisonTable": {
+          "header": {
+            "feature": "Feature",
+            "basic": "Basic",
+            "premium": "Premium"
+          },
+          "rows": [
+            {
+              "feature": "Brand Strategy",
+              "basic": "true",
+              "premium": "true"
+            },
+            {
+              "feature": "Visual Identity",
+              "basic": "true",
+              "premium": "true"
+            },
+            {
+              "feature": "Brand Guidelines",
+              "basic": "false",
+              "premium": "true"
+            },
+            {
+              "feature": "Ongoing Support",
+              "basic": "false",
+              "premium": "true"
+            },
+            {
+              "feature": "Custom Templates",
+              "basic": "false",
+              "premium": "true"
+            }
+          ]
+        },
+        "brandIdentity": {
+          "title": "Brand Identity",
+          "description": "Create a unique and memorable brand identity that resonates with your audience.",
+          "points": [
+            "Logo design",
+            "Color palette",
+            "Typography",
+            "Brand voice"
+          ]
+        },
+        "designSystem": {
+          "title": "Design System",
+          "description": "Develop a cohesive design system to ensure consistency across all platforms.",
+          "points": [
+            "UI components",
+            "Design tokens",
+            "Style guide",
+            "Responsive design"
+          ]
+        },
+        "brandGuidelines": {
+          "title": "Brand Guidelines",
+          "description": "Establish clear brand guidelines to maintain your brand's integrity.",
+          "points": [
+            "Logo usage",
+            "Color usage",
+            "Typography rules",
+            "Imagery guidelines"
+          ]
+        },
+        "brandStrategy": {
+          "title": "Brand Strategy",
+          "description": "Craft a compelling brand strategy that aligns with your business goals.",
+          "points": [
+            "Brand positioning",
+            "Messaging framework",
+            "Target audience",
+            "Competitive analysis"
+          ]
+        },
+        "visual": {
+          "title": "Visual Assets",
+          "description": "Create stunning visual assets that bring your brand to life.",
+          "points": [
+            "Illustrations",
+            "Icons",
+            "Photography",
+            "Animations"
+          ]
+        },
+        "digitalAssets": {
+          "title": "Digital Assets",
+          "description": "Develop digital assets that enhance your online presence.",
+          "points": [
+            "Social media templates",
+            "Website design",
+            "Email templates",
+            "Digital ads"
+          ]
+        }
+      },
+      "faq": {
+      "subtitle": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our branding services.",
+      "relatedResources": "Related Resources",
+      "stillHaveQuestions": "Still have questions?",
+      "contactPrompt": "Feel free to reach out to us for more information.",
+      "contactButton": "Contact Us",
+      "scheduleButton": "Schedule a Call",
+      "scheduleLinkUrl": "/contact",
+      "questions": [
+        {
+          "question": "What is included in your branding package?",
+          "answer": "Our branding package includes a comprehensive brand strategy, visual identity design, and brand guidelines.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "How long does the branding process take?",
+          "answer": "The branding process typically takes 4-6 weeks, depending on the complexity of the project.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "Can I see examples of your previous work?",
+          "answer": "Yes, we have a portfolio of our previous branding projects available for review.",
+          "hasLinks": "true",
+          "links": [
+            {
+              "text": "View Our Portfolio",
+              "url": "/projects"
+            },
+            {
+              "text": "Reach out",
+              "url": "/contact"
+            }
+          ]
+        },
+        {
+          "question": "Do you offer ongoing brand management?",
+          "answer": "Yes, we offer ongoing brand management services to ensure your brand remains consistent and effective.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "What industries do you specialize in?",
+          "answer": "We work with businesses across various industries, including tech, healthcare, retail, and more.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "How do I get started with your branding services?",
+          "answer": "Simply contact us to schedule a consultation, and we'll guide you through the process.",
+          "hasLinks": "true",
+          "links": [
+            {
+              "text": "Contact Us",
+              "url": "/contact"
+            },
+            {
+              "text": "Learn more about EGA",
+              "url": "/about"
+            }
+          ]
+        }
+      ]
+    }
+    },
+    "mediaProductionPage": {
+      "metaTitle": "Media Production Services - EGA Marketing Agency",
+    "metaDescription": "Professional media production services including video production, photography, animation, and audio production for all your marketing needs.",
+    "title": "Media Production Services",
+    "description": "Create compelling visual content that captures attention and effectively communicates your message.",
+    "services": "Our Services",
+        "hero": {
+          "subtitle": "Media Production",
+          "titleLine1": "Crafting Captivating",
+          "titleLine2": "Media Experiences",
+          "description": "We help businesses create high-quality media content that engages audiences and drives results.",
+          "primaryCta": "Start Your Project",
+          "secondaryCta": "See Our Work",
+          "stats": [
+          {
+            "value": "90%",
+            "label": "Guaranteed Increase in Sales"
+          },
+          {
+            "value": "98%",
+            "label": "Client Satisfaction"
+          },
+          {
+            "value": "2+",
+            "label": "Years of Expertise"
+          }
+        ]
+        },
+        "overview": {
+          "subtitle": "What We Offer",
+          "title": "Comprehensive Media Production Solutions",
+          "description": "From video production to audio editing, we provide end-to-end media production services tailored to your business needs.",
+          "learnMore": "Learn More",
+          "trustedBy": "Trusted by leading brands worldwide",
+          "cards": [
+            {
+              "title": "Video Production",
+              "description": "Create high-quality videos that tell your story and captivate your audience.",
+              "linkId": "video-production"
+            },
+            {
+              "title": "Audio Production",
+              "description": "Produce professional audio content, including podcasts, voiceovers, and soundtracks.",
+              "linkId": "audio-production"
+            },
+            {
+              "title": "Post-Production",
+              "description": "Enhance your media with expert editing, color grading, and special effects.",
+              "linkId": "post-production"
+            }
+          ]
+        },
+        "process": {
+          "subtitle": "Our Process",
+          "title": "How We Create Your Media",
+          "description": "Our proven process ensures that every step of your media production journey is seamless and effective.",
+          "keyBenefits": "Key Benefits",
+          "ctaButton": "Get Started",
+          "ctaDescription": "Ready to elevate your media? Let's get started!",
+          "steps": [
+            {
+              "title": "Concept Development",
+              "description": "We start by understanding your vision and goals to create a compelling media concept.",
+              "benefits": [
+                "Creative brainstorming",
+                "Storyboarding",
+                "Scriptwriting",
+                "Concept approval"
+              ]
+            },
+            {
+              "title": "Pre-Production",
+              "description": "We plan every detail, from casting to location scouting, to ensure a smooth production process.",
+              "benefits": [
+                "Casting and auditions",
+                "Location scouting",
+                "Equipment setup",
+                "Production schedule"
+              ]
+            },
+            {
+              "title": "Production",
+              "description": "Our team brings your vision to life with professional filming and recording.",
+              "benefits": [
+                "High-quality filming",
+                "Professional audio recording",
+                "On-set direction",
+                "B-roll footage"
+              ]
+            },
+            {
+              "title": "Post-Production",
+              "description": "We polish your media with expert editing, color grading, and special effects.",
+              "benefits": [
+                "Video editing",
+                "Audio mixing",
+                "Color correction",
+                "Final delivery"
+              ]
+            }
+          ]
+        },
+        "features": {
+          "subtitle": "Our Features",
+          "title": "What Makes Us Different",
+          "description": "We offer a comprehensive suite of media production services to help your business stand out.",
+          "videoProduction": {
+            "title": "Video Production",
+            "description": "Create high-quality videos that tell your story and captivate your audience.",
+            "points": [
+              "Concept development",
+              "Professional filming",
+              "Editing and post-production",
+              "Final delivery"
+            ]
+          },
+          "audioProduction": {
+            "title": "Audio Production",
+            "description": "Produce professional audio content, including podcasts, voiceovers, and soundtracks.",
+            "points": [
+              "Recording and mixing",
+              "Sound design",
+              "Voiceover services",
+              "Audio mastering"
+            ]
+          },
+          "postProduction": {
+            "title": "Post-Production",
+            "description": "Enhance your media with expert editing, color grading, and special effects.",
+            "points": [
+              "Video editing",
+              "Color correction",
+              "Special effects",
+              "Final rendering"
+            ]
+          },
+          "streamingSolutions": {
+            "title": "Streaming Solutions",
+            "description": "Deliver your content seamlessly across streaming platforms.",
+            "points": [
+              "Live streaming setup",
+              "Platform integration",
+              "Content delivery optimization",
+              "Analytics and reporting"
+            ]
+          },
+          "contentCreation": {
+            "title": "Content Creation",
+            "description": "Develop engaging content tailored to your audience.",
+            "points": [
+              "Scriptwriting",
+              "Storyboarding",
+              "Creative direction",
+              "Content strategy"
+            ]
+          },
+          "digitalDistribution": {
+            "title": "Digital Distribution",
+            "description": "Distribute your media across digital platforms for maximum reach.",
+            "points": [
+              "Social media optimization",
+              "Streaming platforms",
+              "Email marketing",
+              "SEO for video content"
+            ]
+          }
+        },
+        "faq": {
+      "subtitle": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our media production services.",
+      "relatedResources": "Related Resources",
+      "stillHaveQuestions": "Still have questions?",
+      "contactPrompt": "Feel free to reach out to us for more information.",
+      "contactButton": "Contact Us",
+      "scheduleButton": "Schedule a Call",
+      "scheduleLinkUrl": "/contact",
+      "questions": [
+        {
+          "question": "What is included in your media production package?",
+          "answer": "Our media production package includes concept development, filming, editing, and final delivery.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "How long does the media production process take?",
+          "answer": "The media production process typically takes 6-8 weeks, depending on the complexity of the project.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "Can I see examples of your previous work?",
+          "answer": "Yes, we have a portfolio of our previous media production projects available for review.",
+          "hasLinks": "true",
+          "links": [
+            {
+              "text": "View Our Portfolio",
+              "url": "/portfolio"
+            },
+            {
+              "text": "Reach out",
+              "url": "/contact"
+            }
+          ]
+        },
+        {
+          "question": "Do you offer ongoing media support?",
+          "answer": "Yes, we offer ongoing media support to ensure your content remains fresh and engaging.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "What industries do you specialize in?",
+          "answer": "We work with businesses across various industries, including entertainment, education, retail, and more.",
+          "hasLinks": "false"
+        },
+        {
+          "question": "How do I get started with your media production services?",
+          "answer": "Simply contact us to schedule a consultation, and we'll guide you through the process.",
+          "hasLinks": "true",
+          "links": [
+            {
+              "text": "Contact Us",
+              "url": "/contact"
+            },
+            {
+              "text": "Learn more about EGA",
+              "url": "/about"
+            }
+          ]
+        }
+      ]
+    }
+    },
+    "about": {
+      "metaTitle": "About EGA - Egypt's Leading Marketing Agency",
+      "metaDescription": "Learn about EGA, a young and passionate digital agency transforming innovative ideas into impactful digital experiences for businesses of all sizes.",
+      "organizationDescription": "A young, passionate digital agency founded with a dream to help businesses thrive in the digital world through expertise, innovation, and commitment to excellence.",
+      "founderName": "EGA Founding Team",
+      "founderTitle": "Digital Marketing Specialists",
+      "award1": "Rising Star in Digital Marketing",
+      "award2": "Innovation Excellence Award",
+      "slogan": "Transforming Ideas Into Reality",
+      "heroSubtitle": "Our Story",
+      "heroTitleFirstLine": "Transforming Ideas",
+      "heroTitleSecondLine": "Into Reality",
+      "heroDescription": "We are a young, passionate digital agency founded with a dream to help businesses thrive in the digital world. Though we're only two months old, our expertise, innovation, and commitment to excellence make us your ideal partner for digital transformation.",
+      "heroButtonPrimary": "Our Vision",
+      "heroButtonSecondary": "Get in Touch",
+      "innovativeText": "Innovative",
+      "solutionsText": "Solutions",
+      "qualityLabel": "Quality",
+      "clientFocusedLabel": "Client-Focused",
+      
+      "statsProjects": "Projects",
+      "statsClients": "Happy Clients",
+      "statsServices": "Services",
+      "statsExpertise": "Expertise Areas",
+      
+      "visionSubtitle": "Looking Forward",
+      "visionTitle": "Our Vision for the Future",
+      "visionLabel": "Our Vision",
+      "visionText1": "We envision a digital landscape where businesses of all sizes can harness the power of technology to connect with their audiences in meaningful ways. Our vision is to be the catalyst that transforms innovative ideas into impactful digital experiences.",
+      "visionText2": "Though we're young, we dream big. We see a future where our agency stands at the forefront of digital innovation, helping clients navigate the ever-evolving digital landscape with confidence and creativity.",
+      "visionPoint1": "Creating digital experiences that inspire and engage",
+      "visionPoint2": "Building lasting partnerships with our clients",
+      "visionPoint3": "Setting new standards for digital excellence",
+      
+      "missionSubtitle": "Our Purpose",
+      "missionTitle": "The Mission that Drives Us",
+      "missionLabel": "Our Mission",
+      "missionText1": "Our mission is to empower businesses with digital solutions that drive growth, enhance visibility, and create meaningful connections with their audiences. We're committed to delivering exceptional quality and value in every project we undertake.",
+      "missionText2": "We believe in a collaborative approach, working closely with our clients to understand their unique needs and challenges. We're here to be your digital partner, guiding you through the complexities of the digital world and helping you achieve your business goals.",
+      "approachTitle1": "Collaborative",
+      "approachText1": "Working together with our clients",
+      "approachTitle2": "Innovative",
+      "approachText2": "Bringing fresh ideas to the table",
+      "approachTitle3": "Quality-Focused",
+      "approachText3": "Never compromising on excellence",
+      "approachTitle4": "Results-Driven",
+      "approachText4": "Focused on achieving measurable outcomes",
+      
+      "valuesSubtitle": "What We Stand For",
+      "valuesTitle": "Our Core Values",
+      "valuesDescription": "The principles that guide our work and define our culture. These values are the foundation of everything we do and how we interact with our clients and each other.",
+      "valuesSummary": "These values aren't just words on a page—they're embedded in our day-to-day operations and guide every decision we make. As a young agency, we're building our foundation on these principles, ensuring that we grow in the right direction.",
+      
+      "valueTitle1": "Innovation",
+      "valueDesc1": "We embrace new ideas and technologies to create cutting-edge solutions that help our clients stay ahead of the curve.",
+      "valueTitle2": "Integrity",
+      "valueDesc2": "We operate with transparency and honesty in all our interactions, building trust and long-lasting relationships.",
+      "valueTitle3": "Excellence",
+      "valueDesc3": "We strive for excellence in everything we do, setting high standards and continuously improving our skills and services.",
+      "valueTitle4": "Collaboration",
+      "valueDesc4": "We work closely with our clients and each other, fostering a culture of teamwork, open communication, and shared success.",
+      "valueTitle5": "Adaptability",
+      "valueDesc5": "We embrace change and remain flexible, allowing us to respond quickly to new challenges and opportunities.",
+      "valueTitle6": "Client Focus",
+      "valueDesc6": "We put our clients' needs at the center of everything we do, going above and beyond to deliver exceptional results."
+    },
+    "softwarePage": {
+      "metaTitle": "Web Solutions - EGA Marketing Agency",
+    "metaDescription": "Professional web development services including website design, e-commerce solutions, web applications, and website optimization.",
+    "title": "Web Solutions",
+    "description": "Create high-performing, user-friendly websites and web applications that drive business growth.",
+    "services": "Our Services",
+          "hero": {
+            "subtitle": "Innovative Software Solutions",
+            "titleLine1": "Crafting Digital",
+            "titleLine2": "Experiences That Matter",
+            "description": "We specialize in creating cutting-edge software and web solutions tailored to your business needs. Let us help you transform your ideas into reality.",
+            "primaryCta": "Start Your Project",
+            "secondaryCta": "See Our Work",
+            "stats": [
+              {
+                "value": "90%",
+                "label": "Guaranteed Increase in Sales"
+              },
+              {
+                "value": "98%",
+                "label": "Client Satisfaction"
+              },
+              {
+                "value": "2+",
+                "label": "Years of Expertise"
+              }
+            ]
+          },
+          "overview": {
+            "subtitle": "Our Expertise",
+            "title": "Comprehensive Software Development Services",
+            "description": "From concept to deployment, we provide end-to-end solutions that drive business growth and enhance user experiences.",
+            "cards": [
+              {
+                "title": "Custom Web Development",
+                "description": "Tailored web applications built with modern technologies to meet your specific business requirements.",
+                "linkId": "web-development",
+                "points": [
+                  "Responsive & mobile-friendly",
+                  "SEO optimized",
+                  "Scalable architecture"
+                ]
+              },
+              {
+                "title": "Enterprise Solutions",
+                "description": "Robust software systems designed to streamline your business operations and workflows.",
+                "linkId": "enterprise-solutions",
+                "points": [
+                  "Custom CRM/ERP systems",
+                  "Process automation",
+                  "Data integration"
+                ]
+              },
+              {
+                "title": "E-Commerce Platforms",
+                "description": "High-performance online stores with seamless payment integration and inventory management.",
+                "linkId": "ecommerce",
+                "points": [
+                  "Secure checkout",
+                  "Multi-channel selling",
+                  "Analytics dashboard"
+                ]
+              }
+            ],
+            "trustedBy": "Trusted by leading companies worldwide"
+          },
+          "process": {
+            "subtitle": "Our Workflow",
+            "keyBenefits": "Key Benefits",
+            "title": "Transparent Development Process",
+            "description": "We follow a proven methodology to deliver high-quality software solutions on time and within budget.",
+            "steps": [
+                {
+                  "title": "Discovery & Planning",
+                  "description": "We start by understanding your business goals, target audience, and technical requirements.",
+                  "benefits": [
+                    "Requirement analysis",
+                    "Project roadmap",
+                    "Technology stack selection",
+                    "Risk assessment"
+                  ]
+                },
+                {
+                  "title": "UI/UX Design",
+                  "description": "Creating intuitive user interfaces and seamless user experiences tailored to your audience.",
+                  "benefits": [
+                    "Wireframing & prototyping",
+                    "User testing",
+                    "Design system creation",
+                    "Accessibility compliance"
+                  ]
+                },
+                {
+                  "title": "Development",
+                  "description": "Agile development process with regular updates and quality assurance checks.",
+                  "benefits": [
+                    "Sprint planning",
+                    "Code reviews",
+                    "Continuous integration",
+                    "Automated testing"
+                  ]
+                },
+                {
+                  "title": "Deployment & Support",
+                  "description": "Seamless launch and ongoing maintenance to ensure optimal performance.",
+                  "benefits": [
+                    "Performance optimization",
+                    "Security updates",
+                    "24/7 monitoring",
+                    "Scalability planning"
+                  ]
+                }
+              ],
+            "ctaButton": "Start Your Project",
+            "ctaDescription": "Get a free consultation with our experts"
+          },
+          "features": {
+            "subtitle": "Our Capabilities",
+            "title": "End-to-End Development Services",
+            "description": "We cover all aspects of software development to deliver comprehensive solutions for your business.",
+            "webDevelopment": {
+              "title": "Web Development",
+              "description": "Custom websites and web applications built with modern frameworks.",
+              "points": [
+                "React, Angular, Vue.js",
+                "Node.js & Python backends",
+                "RESTful API integration"
+              ]
+            },
+            "responsiveDesign": {
+              "title": "Responsive Design",
+              "description": "Mobile-first approach for flawless experience across all devices.",
+              "points": [
+                "Adaptive layouts",
+                "Touch optimization",
+                "Performance focused"
+              ]
+            },
+            "apiIntegration": {
+              "title": "API Integration",
+              "description": "Seamless connection with third-party services and platforms.",
+              "points": [
+                "Payment gateways",
+                "Social media integration",
+                "Cloud services"
+              ]
+            },
+            "customSolutions": {
+              "title": "Custom Solutions",
+              "description": "Tailored software designed specifically for your business needs.",
+              "points": [
+                "Unique functionality",
+                "Scalable architecture",
+                "Future-proof design"
+              ]
+            },
+            "teamCollaboration": {
+              "title": "Team Collaboration",
+              "description": "Dedicated team working closely with you throughout the project.",
+              "points": [
+                "Regular updates",
+                "Transparent communication",
+                "Agile methodology"
+              ]
+            },
+            "supportMaintenance": {
+              "title": "Support & Maintenance",
+              "description": "Ongoing support to keep your software running smoothly.",
+              "points": [
+                "Bug fixes",
+                "Security updates",
+                "Performance tuning"
+              ]
+            }
+          },
+          "faq": {
+            "subtitle": "Have Questions?",
+            "title": "Frequently Asked Questions",
+            "description": "Find answers to common questions about our software development services.",
+            "questions": [
+              {
+                "question": "What technologies do you work with?",
+                "answer": "We work with a wide range of technologies including JavaScript frameworks (React, Angular, Vue), Python, Node.js, PHP, and various databases. We choose the best stack for your specific project requirements.",
+                "hasLinks": "false"
+              },
+              {
+                "question": "How long does a typical project take?",
+                "answer": "Project timelines vary based on complexity. A simple website might take 4-6 weeks, while a complex web application could take 3-6 months. We'll provide a detailed timeline after our initial consultation.",
+                "hasLinks": "false"
+              },
+              {
+                "question": "Do you provide ongoing maintenance?",
+                "answer": "Yes, we offer various maintenance packages to keep your software updated, secure, and performing optimally after launch.",
+                "hasLinks": "false"
+              },
+              {
+                "question": "What's your pricing structure?",
+                "answer": "We offer both fixed-price projects for well-defined scopes and time-and-materials contracts for more flexible projects. We'll recommend the best approach for your needs.",
+                "hasLinks": "false"
+              },
+              {
+                "question": "Can you work with existing systems?",
+                "answer": "Absolutely. We frequently integrate with existing systems and can modernize legacy applications while maintaining critical functionality.",
+                "hasLinks": "false"
+              },
+              {
+                "question": "How do you ensure code quality?",
+                "answer": "We follow best practices including code reviews, automated testing, continuous integration, and thorough QA processes to deliver reliable, maintainable code.",
+                "hasLinks": "false"
+              }
+            ],
+            "relatedResources": "Learn more",
+            "stillHaveQuestions": "Still have questions?",
+            "contactPrompt": "Our team is ready to answer any questions you may have about our software development services.",
+            "contactButton": "Contact Us",
+            "scheduleButton": "Schedule Call",
+            "scheduleLinkUrl": "/contact"
+          }
+        },
+    "socialMediaPage": {
+      "metaTitle": "Social Media Services - EGA Marketing Agency",
+    "metaDescription": "Comprehensive social media marketing services including strategy development, content creation, community management, and paid social advertising.",
+    "title": "Social Media Services",
+    "description": "Build and engage your audience across social platforms with strategic content and targeted campaigns.",
+    "services": "Our Services",
+  "hero": {
+    "subtitle": "Grow Your Online Presence",
+    "titleLine1": "Social Media",
+    "titleLine2": "Marketing That Converts",
+    "description": "We craft powerful social media strategies to boost your brand visibility, engage your audience, and drive measurable results.",
+    "primaryCta": "Start Your Project",
+    "secondaryCta": "See Our Work",
+    "stats": [
+      {
+        "value": "90%",
+        "label": "Guaranteed Increase in Sales"
+      },
+      {
+        "value": "98%",
+        "label": "Client Satisfaction"
+      },
+      {
+        "value": "2+",
+        "label": "Years of Expertise"
+      }
+    ]
+  },
+  "overview": {
+    "subtitle": "Our Services",
+    "title": "Comprehensive Social Media Solutions",
+    "description": "From strategy to execution, we deliver tailored social media marketing that grows your business and connects with your audience.",
+    "cards": [
+      {
+        "title": "Content Creation",
+        "description": "Eye-catching visuals and compelling copy designed to captivate your audience.",
+        "linkId": "content-creation",
+        "points": [
+          "Custom graphics",
+          "Video content",
+          "Branded posts"
+        ]
+      },
+      {
+        "title": "Ad Campaigns",
+        "description": "Targeted advertising campaigns to maximize reach and conversions.",
+        "linkId": "ad-campaigns",
+        "points": [
+          "Audience targeting",
+          "A/B testing",
+          "ROI tracking"
+        ]
+      },
+      {
+        "title": "Analytics & Insights",
+        "description": "Detailed reporting to optimize performance and inform strategy.",
+        "linkId": "analytics",
+        "points": [
+          "Engagement metrics",
+          "Growth tracking",
+          "Competitor analysis"
+        ]
+      }
+    ],
+    "trustedBy": "Trusted by brands worldwide"
+  },
+  "process": {
+    "subtitle": "How We Work",
+    "title": "Proven Marketing Process",
+    "keyBenefits": "Key Benefits",
+    "description": "Our systematic approach ensures your social media presence thrives with consistent growth and engagement.",
+    "steps": [
+      {
+        "title": "Strategy Development",
+        "description": "We analyze your brand and audience to create a tailored social media plan.",
+        "benefits": [
+          "Market research",
+          "Goal setting",
+          "Platform selection"
+        ]
+      },
+      {
+        "title": "Content Planning",
+        "description": "Developing a content calendar with posts that resonate with your audience.",
+        "benefits": [
+          "Trend analysis",
+          "Content scheduling",
+          "Brand consistency"
+        ]
+      },
+      {
+        "title": "Campaign Execution",
+        "description": "Launching and managing campaigns with real-time optimization.",
+        "benefits": [
+          "Ad management",
+          "Engagement monitoring",
+          "Performance tweaks"
+        ]
+      },
+      {
+        "title": "Reporting & Growth",
+        "description": "Providing insights and adjustments for continuous improvement.",
+        "benefits": [
+          "Monthly reports",
+          "Strategy refinement",
+          "Growth tracking"
+        ]
+      }
+    ],
+    "ctaButton": "Launch Your Campaign",
+    "ctaDescription": "Get a free strategy session with our team"
+  },
+  
+  "features": {
+    "subtitle": "Our Services",
+    "title": "Comprehensive Social Media Solutions",
+    "description": "Boost your online presence with our expert social media services tailored to your business needs.",
+    
+    "socialMediaStrategy": {
+      "title": "Social Media Strategy",
+      "description": "Custom strategies to elevate your brand's social presence.",
+      "points": {
+        "0": "Audience analysis and targeting",
+        "1": "Platform-specific strategies",
+        "2": "Content planning and scheduling"
+      }
+    },
+    
+    "contentCreation": {
+      "title": "Content Creation",
+      "description": "Engaging content that resonates with your audience.",
+      "points": {
+        "0": "High-quality graphics and videos",
+        "1": "Branded content development",
+        "2": "Trend-based content creation"
+      }
+    },
+    
+    "communityManagement": {
+      "title": "Community Management",
+      "description": "Build and nurture your online community.",
+      "points": {
+        "0": "24/7 comment moderation",
+        "1": "Customer engagement",
+        "2": "Community growth strategies"
+      }
+    },
+    
+    "paidAdvertising": {
+      "title": "Paid Advertising",
+      "description": "Maximize ROI with targeted ad campaigns.",
+      "points": {
+        "0": "Campaign setup and optimization",
+        "1": "A/B testing",
+        "2": "Budget management"
+      }
+    },
+    
+    "analyticsReporting": {
+      "title": "Analytics & Reporting",
+      "description": "Data-driven insights for better decisions.",
+      "points": {
+        "0": "Performance tracking",
+        "1": "Detailed reports",
+        "2": "Growth analysis"
+      }
+    },
+    
+    "influencerCollaborations": {
+      "title": "Influencer Collaborations",
+      "description": "Amplify reach through strategic partnerships.",
+      "points": {
+        "0": "Influencer identification",
+        "1": "Campaign coordination",
+        "2": "Performance monitoring"
+      }
+    } 
+  },
+  "faq": {
+    "subtitle": "Need Answers?",
+    "title": "Frequently Asked Questions",
+    "description": "Get clarity on our social media marketing services and how we can help your brand.",
+    "questions": [
+      {
+        "question": "Which platforms do you manage?",
+        "answer": "We handle all major platforms including Instagram, Facebook, Twitter, LinkedIn, TikTok, and more, based on your business needs.",
+        "hasLinks": "false"
+      },
+      {
+        "question": "How long until I see results?",
+        "answer": "Results vary by goals, but most clients see noticeable growth within 1-3 months of consistent campaign management.",
+        "hasLinks": "false"
+      },
+      {
+        "question": "Do you create content for us?",
+        "answer": "Yes, we provide full content creation services including graphics, videos, and copy tailored to your brand.",
+        "hasLinks": "false"
+      },
+      {
+        "question": "What’s included in your pricing?",
+        "answer": "Our plans include strategy, content creation, ad management, analytics, and community management. We’ll customize based on your needs.",
+        "hasLinks": "false"
+      },
+      {
+        "question": "Can you work with my existing content?",
+        "answer": "Absolutely, we can incorporate your existing content and enhance it to align with your marketing goals.",
+        "hasLinks": "false"
+      },
+      {
+        "question": "How do you measure success?",
+        "answer": "We track key metrics like engagement rate, follower growth, website traffic, and conversions, providing detailed monthly reports.",
+        "hasLinks": "false"
+      }
+    ],
+    "relatedResources": "Learn more",
+    "stillHaveQuestions": "Still have questions?",
+    "contactPrompt": "Our team is here to help with any inquiries about our social media marketing services.",
+    "contactButton": "Contact Us",
+    "scheduleButton": "Book a Call",
+    "scheduleLinkUrl": "/contact"
+  }
+},
+  "performanceMarketingPage": {
+    "metaTitle": "Performance Marketing Services - EGA Marketing Agency",
+    "metaDescription": "Data-driven performance marketing services to maximize ROI, including PPC, SEO, conversion optimization, and analytics.",
+    "title": "Performance Marketing Services",
+    "description": "Drive measurable results with targeted campaigns focused on improving key performance metrics and ROI.",
+    "services": "Our Services",
+    "hero": {
+      "subtitle": "Performance Marketing",
+      "titleLine1": "Maximize Your",
+      "titleLine2": "Digital ROI",
+      "description": "Drive measurable results with data-driven marketing strategies that optimize conversions and boost your bottom line.",
+      "primaryCta": "Explore Our Process",
+      "secondaryCta": "View Pricing",
+      "stats": {
+        "0": {
+          "value": "95%",
+          "label": "Conversion Increase"
+        },
+        "1": {
+          "value": "200+",
+          "label": "Campaigns Managed"
+        },
+        "2": {
+          "value": "50M+",
+          "label": "Revenue Generated"
+        }
+      }
+    },
+    "overview": {
+      "subtitle": "Our Approach",
+      "title": "Performance-Driven Marketing Solutions",
+      "description": "We combine cutting-edge analytics with creative strategies to deliver campaigns that perform.",
+      "cards": {
+        "0": {
+          "title": "Data Analysis",
+          "description": "Deep insights to inform strategy",
+          "linkId": "process"
+        },
+        "1": {
+          "title": "Optimization",
+          "description": "Continuous campaign improvement",
+          "linkId": "features"
+        },
+        "2": {
+          "title": "Results",
+          "description": "Measurable growth metrics",
+          "linkId": "contact"
+        }
+      },
+      "trustedBy": "Trusted by Leading Brands",
+      "learnMore": "Learn More"
+    },
+        "process": {
+          "subtitle": "Our Methodology",
+          "title": "Performance-Driven Marketing Process",
+          "description": "Our proven 4-step process delivers measurable results and maximizes your marketing ROI.",
+          "keyBenefits": "Key Benefits",
+          "ctaButton": "Get Started Now",
+          "ctaDescription": "Ready to transform your marketing performance? Contact us today.",
+          "steps": {
+            "0": {
+              "title": "Discovery & Analysis",
+              "description": "We conduct in-depth research to understand your business, audience, and competitive landscape.",
+              "benefits": {
+                "0": "Comprehensive market analysis",
+                "1": "Audience persona development",
+                "2": "Competitor benchmarking",
+                "3": "Goal alignment session"
+              }
+            },
+            "1": {
+              "title": "Strategy Development",
+              "description": "We create a customized performance marketing strategy tailored to your business objectives.",
+              "benefits": {
+                "0": "Channel selection strategy",
+                "1": "Budget allocation plan",
+                "2": "KPI framework",
+                "3": "Conversion optimization roadmap"
+              }
+            },
+            "2": {
+              "title": "Implementation",
+              "description": "Our experts execute campaigns with precision, using data-driven approaches for maximum impact.",
+              "benefits": {
+                "0": "Campaign setup & optimization",
+                "1": "A/B testing implementation",
+                "2": "Real-time performance monitoring",
+                "3": "Creative asset development"
+              }
+            },
+            "3": {
+              "title": "Optimization & Scaling",
+              "description": "Continuous analysis and refinement to improve results and scale successful campaigns.",
+              "benefits": {
+                "0": "Performance analytics reports",
+                "1": "ROI optimization",
+                "2": "Automation implementation",
+                "3": "Scalable growth strategies"
+              }
+            }
+          }
+      },
+      "features": {
+        "subtitle": "Our Solutions",
+        "title": "Performance Marketing Features",
+        "description": "Maximize your ROI with our comprehensive performance marketing solutions designed to drive measurable results.",
+        "paidAdvertising": {
+          "title": "Paid Advertising",
+          "description": "Strategic ad campaigns across all major platforms to reach your ideal customers.",
+          "points": {
+            "0": "Multi-channel campaign management",
+            "1": "Platform-specific optimization",
+            "2": "Competitor ad analysis"
+          }
+        },
+        "conversionOptimization": {
+          "title": "Conversion Optimization",
+          "description": "Turn more visitors into customers with data-driven optimization techniques.",
+          "points": {
+            "0": "A/B testing implementation",
+            "1": "Landing page optimization",
+            "2": "Checkout process refinement"
+          }
+        },
+        "analyticsTracking": {
+          "title": "Analytics & Tracking",
+          "description": "Comprehensive tracking and reporting to measure every dollar's performance.",
+          "points": {
+            "0": "Custom dashboard setup",
+            "1": "Conversion attribution modeling",
+            "2": "Real-time performance alerts"
+          }
+        },
+        "audienceTargeting": {
+          "title": "Audience Targeting",
+          "description": "Precision targeting to reach the right people at the right time.",
+          "points": {
+            "0": "Lookalike audience creation",
+            "1": "Behavioral targeting",
+            "2": "Demographic segmentation"
+          }
+        },
+        "retargeting": {
+          "title": "Retargeting",
+          "description": "Re-engage visitors who didn't convert to maximize your ad spend.",
+          "points": {
+            "0": "Dynamic product retargeting",
+            "1": "Cross-device tracking",
+            "2": "Personalized ad sequencing"
+          }
+        },
+        "performanceContent": {
+          "title": "Performance Content",
+          "description": "High-converting ad creatives and landing pages tailored to your audience.",
+          "points": {
+            "0": "Ad creative testing",
+            "1": "High-impact copywriting",
+            "2": "Visual optimization"
+          }
+        }
+      },
+    "faq": {
+      "subtitle": "FAQs",
+      "title": "Performance Marketing Questions",
+      "description": "Get answers to common questions about our performance marketing services.",
+      "stillHaveQuestions": "Still have questions?",
+      "contactPrompt": "Our team is ready to provide detailed answers and help you maximize your marketing ROI.",
+      "contactButton": "Contact Us",
+      "scheduleButton": "Schedule Call",
+      "scheduleLinkUrl": "/contact",
+      "relatedResources": "Related Resources",
+      "questions": {
+        "0": {
+          "question": "What is performance marketing?",
+          "answer": "Performance marketing is a results-driven approach where advertisers pay only when a specific action is completed, such as a sale, lead, or click. We focus on measurable outcomes and ROI.",
+          "hasLinks": "true",
+          "links": {
+            "0": {
+              "text": "Learn more about our approach",
+              "url": "/about"
+            },
+            "1": {
+              "text": "See case studies",
+              "url": "/projects"
+            }
+          }
+        },
+        "1": {
+          "question": "How do you measure campaign success?",
+          "answer": "We track KPIs like conversion rates, cost per acquisition (CPA), return on ad spend (ROAS), and customer lifetime value (LTV) using advanced analytics tools.",
+          "hasLinks": "false"
+        },
+        "2": {
+          "question": "What platforms do you specialize in?",
+          "answer": "We manage campaigns across Google Ads, Meta (Facebook/Instagram), LinkedIn, TikTok, and programmatic platforms, choosing the best mix for your goals.",
+          "hasLinks": "false"
+        },
+        "3": {
+          "question": "How long until we see results?",
+          "answer": "Initial optimizations show within 2-4 weeks, with full campaign maturity in 3-6 months depending on your sales cycle and competition.",
+          "hasLinks": "false"
+        },
+        "4": {
+          "question": "What's your pricing model?",
+          "answer": "We offer performance-based pricing, percentage of ad spend, or flat monthly fees - structured to align with your business objectives.",
+          "hasLinks": "false"
+        },
+        "5": {
+          "question": "Do you work with small businesses?",
+          "answer": "Yes, we customize solutions for businesses of all sizes.",
+          "hasLinks": "false"
+        }
+      }
+    }
+  },
+  
+    "blogPage": {
+      "metaTitle": "Blog - Insights & News | EGA Marketing Agency",
+  "metaDescription": "Explore digital marketing insights, industry trends, and helpful tips from EGA's blog to grow your business and stay ahead in the digital landscape.",
+  "breadcrumbLabel": "Blog",
+      "title": "Digital Marketing Insights",
+      "description": "Expert strategies and insights to boost your online presence in the Egyptian market",
+      "allCategories": "All Topics",
+      "readMore": "Read More",
+      "posts": {
+        "post1": {
+          "category": "Social Media Marketing",
+          "date": "March 15, 2025",
+          "title": "7 Advanced Social Media Strategies That Drive Engagement",
+          "excerpt": "Discover proven tactics to boost your social media engagement and convert followers into loyal customers.",
+          "content": "7 Advanced Social Media Strategies That Drive Engagement\n\nIn today's competitive digital landscape, simply having a social media presence isn't enough. Brands need sophisticated strategies that cut through the noise and create meaningful connections with their audience. Let's explore seven advanced techniques to drive real engagement.\n\n1. Implement Pattern Interruption\n\nPattern interruption is a psychological technique that breaks expected patterns to capture attention. On social media feeds dominated by similar content, this helps your content stand out.\n\nHow to implement it:\nUse unexpected formats (like starting videos with a surprising statement)\nCreate visually distinctive content that stops the scroll\nIntroduce unexpected elements in your regular content types\n\n2. Leverage User-Generated Content\n\nUser-generated content (UGC) creates authentic connections while reducing content creation demands. When implemented strategically, UGC can drive 28% higher engagement rates compared to brand-created content.\n\nAdvanced UGC strategies:\nCreate branded hashtag challenges with clear incentives\nImplement UGC galleries on your website that feed back to social platforms\nDevelop a systematic approach to spotlighting customer content\n\n3. Apply the 80/20 Content Analysis Method\n\nThe 80/20 principle suggests that 80% of your results come from 20% of your efforts. Applying this to social media:\n\nAnalyze your last 6-12 months of content performance\nIdentify the top 20% of posts that generated 80% of engagement\nCategorize these high-performing posts by format, topic, posting time, etc.\nCreate a content strategy that amplifies your proven winners\n\n4. Implement Strategic Community Management\n\nAdvanced community management goes beyond replying to comments. It involves creating a structured approach to nurturing community relationships:\n\nSchedule specific conversation starters aligned with your content calendar\nDevelop tiered response systems for different types of engagement\nIdentify and nurture relationships with your most engaged followers\n\n5. Create Platform-Specific Content Experiences\n\nAdvanced social media strategies avoid the \"one-size-fits-all\" approach to content. Each platform has unique characteristics that should inform content creation:\n\nInstagram: Focus on aesthetic consistency and story-driven carousels\nTikTok: Embrace native creation tools and hook viewers in the first 3 seconds\nLinkedIn: Develop thought leadership content with a conversational tone\nFacebook: Optimize for community discussions and longer dwell time\n\n6. Develop Multi-touchpoint Social Campaigns\n\nRather than isolated posts, advanced social campaigns create connected touchpoints that guide users through an engagement journey:\n\nAwareness: Teaser content that builds anticipation\nConsideration: In-depth content that educates and demonstrates value\nConversion: Clear calls-to-action with social proof elements\nAdvocacy: Mechanisms for sharing experiences and outcomes\n\n7. Implement Engagement-Based Retargeting\n\nThe most sophisticated social media strategies connect engagement to your broader marketing ecosystem:\n\nCreate custom audiences based on engagement depth (e.g., people who watched 75% of your videos)\nDevelop specialized content for different engagement segments\nUse engagement patterns to inform product development and customer service\n\nConclusion\n\nImplementing these seven advanced social media strategies requires more planning and analysis than basic approaches, but the results are worth the investment. Brands that move beyond posting schedules to strategic engagement systems see significantly higher ROI from their social media efforts.\n\nBy focusing on psychological principles, data-driven content decisions, and integrated campaign approaches, you can transform your social media presence from a broadcasting channel into a powerful engagement engine that drives real business results.",
+          "author": {
+            "name": "Sarah Johnson",
+            "role": "Social Media Director"
+          }
+        },
+        "post2": {
+          "category": "Social Media Marketing",
+          "date": "March 10, 2025",
+          "title": "How AI is Transforming SEO in 2025",
+          "excerpt": "Learn how artificial intelligence is reshaping search engine optimization and how to leverage it for your business.",
+          "content": "How AI is Transforming SEO in 2025\n\nArtificial intelligence has fundamentally changed how search engines operate and how users interact with search results. For businesses and marketers, understanding the AI-driven SEO landscape is no longer optional—it's essential for digital visibility. Let's explore the cutting-edge ways AI is transforming SEO in 2025.\n\nThe Evolution of Search Algorithms\n\nFrom Keywords to Intent\n\nSearch engines have evolved dramatically from their early keyword-matching days. Google's advanced AI systems now understand:\n\nSearch intent: The underlying purpose behind a query\nContext: How query meaning changes based on user history, location, and current events\nNatural language: Conversational queries including complex questions\n\nThis evolution means today's SEO strategies must focus primarily on answering user needs rather than simply targeting keywords.\n\nAI-Powered Ranking Factors\n\nIn 2025, Google's algorithms incorporate several AI-driven ranking signals:\n\n1. Content depth and expertise: AI systems evaluate content comprehensiveness and E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)\n\n2. User interaction patterns: How users engage with your content after clicking through from search results\n\n3. Content freshness relative to topic: Different freshness requirements for different query types\n\n4. Entity relationships: How concepts in your content relate to the broader knowledge graph\n\nKey AI Technologies Reshaping SEO\n\nLarge Language Models and Content Evaluation\n\nLarge Language Models (LLMs) have been integrated into search algorithms to evaluate content quality. These models can:\n\nAssess content comprehensiveness relative to search intent\nIdentify content that provides unique insights versus generic information\nDetect nuanced differences in content accuracy and depth\n\nThis means high-quality, expert-created content has gained even more importance in search rankings.\n\nComputer Vision in Visual Search\n\nAI-powered image recognition has transformed visual search capabilities. For businesses, this means:\n\nImages on your site are now analyzed and indexed for their content\nVisual search can drive traffic independently of text content\nProduct recognition in images creates new discovery opportunities\n\nMultimodal Search Understanding\n\nIn 2025, search engines use multimodal AI to understand queries across text, visual, and audio inputs. This affects SEO in several ways:\n\nContent needs to address topics in multiple formats\nVoice-optimized content structure is increasingly important\nMultimedia content receives ranking benefits when properly optimized\n\nPractical AI-Driven SEO Strategies for 2025\n\n1. Content Creation and Optimization\n\nUse AI tools for content research:\nEmploy topic modeling tools to identify comprehensive coverage requirements\nAnalyze search intent patterns for target queries\nGenerate content briefs based on top-performing content\n\nFocus on content depth and expertise:\nDevelop subject matter expertise signals in your content\nInclude original research, data, and unique insights\nOptimize for featured snippets with clear, structured answers\n\n2. Technical SEO for AI Crawlers\n\nOptimize for advanced crawling:\nImplement schema markup for entity identification\nCreate clear content hierarchies for topic understanding\nEnsure efficient rendering of JavaScript content\n\n3. User Experience Signals\n\nClick-through rate optimization:\nCreate compelling titles and meta descriptions that accurately represent content\nUse structured data to enhance SERP appearances\nTest different title formats to improve CTR\n\nEngagement optimization:\nStructure content for optimal dwell time\nCreate internal linking paths that encourage deeper site exploration\nDevelop content that answers follow-up questions\n\nConclusion\n\nAI has fundamentally transformed SEO from a technical discipline focused on keywords and links to a complex strategy centered on user intent, content quality, and holistic digital experiences. For businesses navigating this landscape, success requires embracing AI tools while maintaining focus on providing genuine value to users.\n\nBy understanding the AI technologies behind search and implementing the strategies outlined in this article, businesses can not only maintain their search visibility but thrive in the new AI-driven search ecosystem of 2025 and beyond.",
+          "author": {
+            "name": "Michael Chen",
+            "role": "SEO Specialist"
+          }
+        },
+        "post3": {
+          "category": "Digital Advertising",
+          "date": "March 5, 2025",
+          "title": "The Psychology behind viral content",
+          "excerpt": "Understand the psychological triggers that make content share-worthy and how to implement them in your strategy.",
+          "content": "The Psychology Behind Viral Content\n\nViral content isn't created by accident. Behind the most shared posts, videos, and memes are powerful psychological principles that trigger emotional responses and sharing behaviors. Understanding these psychological foundations can transform your content strategy from hoping for shares to strategically engineering content that's primed for virality.\n\nThe Science of Sharing: Core Psychological Triggers\n\n1. Emotional Arousal\n\nResearch by Jonah Berger and Katherine Milkman analyzed nearly 7,000 New York Times articles and found that content which evokes high-arousal emotions—whether positive or negative—is more likely to go viral than content that evokes low-arousal or no emotions.\n\nHigh-arousal positive emotions:\nAwe\nExcitement\nAmusement\nJoy\nInspiration\n\nHigh-arousal negative emotions:\nAnger\nAnxiety\nFear\n\nInterestingly, content that evokes positive high-arousal emotions is shared more frequently than content triggering negative emotions. This explains why uplifting, inspiring stories and humorous content consistently achieve viral status.\n\n2. Social Currency\n\nPsychologist Mark Leary's sociometer theory suggests that people continuously monitor their value to others. Sharing valuable, interesting, or entertaining content serves as a form of social currency—it makes the sharer look good to their network.\n\nKey components of social currency:\nInsider knowledge: Content that makes people feel \"in the know\"\nRemarkability: Content unusual enough to prompt conversation\nPractical value: Information others will find useful\nIdentity signaling: Content that aligns with how people want to be perceived\n\n3. Practical Utility\n\nContent that solves problems or provides clear value has built-in sharing incentives. When people find something useful, they naturally want to share it with others who might benefit.\n\nUtility-driven content works because:\nIt creates immediate value for the recipient\nSharing useful information activates reward centers in the brain\nIt strengthens social bonds through reciprocity\n\n4. The Curiosity Gap\n\nThe curiosity gap, a concept explored by George Loewenstein, describes the gap between what we know and what we want to know. Content that opens this gap creates a psychological itch that can only be scratched by engaging with the content.\n\nEffective curiosity gap triggers include:\nHeadlines that hint at valuable information without revealing it\nVisual content that requires closer examination to understand\nStories with unexpected twists or counterintuitive conclusions\n\nVirality Amplifiers: Social Psychological Factors\n\n1. Social Proof\n\nRobert Cialdini's principle of social proof explains that people determine what's correct by finding out what others think is correct. When content already has engagement, it's more likely to receive additional engagement.\n\nHow social proof influences virality:\nVisible share counts signal content value\nComments and engagement create FOMO (fear of missing out)\nSocial validation reduces the perceived risk of engaging\n\n2. Identity and Tribal Belonging\n\nHumans have a fundamental need to belong to social groups. Content that reinforces group identity or allows people to signal tribal affiliations has higher sharing potential.\n\nIdentity-driven sharing occurs when content:\nReinforces group values or beliefs\nCreates in-group recognition\nProvides a platform for identity expression\n\nViral Content Formats: Psychological Effectiveness\n\n1. Lists and Rankings\n\nList-based content works because it:\nProvides clear structure that reduces cognitive load\nCreates easy entry points for scanning\nSatisfies our need for categorization and order\nOften creates controversy or disagreement that drives engagement\n\n2. Stories and Narratives\n\nStorytelling is powerful because:\nStories activate multiple brain regions, creating stronger memory imprints\nNarrative transportation reduces counter-arguing and increases persuasion\nCharacter-driven stories trigger oxytocin release, building empathy and connection\n\n3. Visual Content\n\nVisual content processes 60,000 times faster than text and triggers stronger emotional responses. The most effective visual content for virality includes:\nEmotionally expressive human faces\nUnexpected or surprising imagery\nVisually striking colors and compositions\nContent that requires minimal processing to understand\n\nCreating Strategically Viral Content\n\nApplying these psychological principles to your content strategy involves a systematic approach:\n\nAudience Emotional Mapping\n\nCreate an emotional map of your audience that identifies:\nPrimary emotional drivers for your specific audience\nContent topics that naturally connect to these emotions\nThe emotional states most likely to trigger sharing in your niche\n\nViral Testing Framework\n\nImplement a testing framework to refine your understanding of what triggers virality specifically for your audience:\n\n1. Create content variations emphasizing different psychological triggers\n2. Test these variations with small audience segments\n3. Analyze which psychological triggers drive the most sharing\n4. Refine your content strategy based on these insights\n\nConclusion\n\nViral content isn't random or accidental—it's the result of content that strategically aligns with fundamental psychological principles. By understanding the emotional, social, and cognitive factors that drive sharing behavior, marketers can create content with a significantly higher probability of achieving viral status.\n\nThe most effective viral content strategies combine multiple psychological triggers while remaining authentic to brand values and audience needs. Rather than chasing virality as an end goal, use these psychological insights to amplify content that genuinely serves your audience and business objectives.",
+          "author": {
+            "name": "Jessica Wong",
+            "role": "Content Strategist"
+          }
+        },
+        "post4": {
+          "category": "Digital Advertising",
+          "date": "February 28, 2025",
+          "title": "Mastering Marketing Attribution Models",
+          "excerpt": "A comprehensive guide to choosing and implementing the right attribution model for accurate ROI measurement.",
+          "content": "Mastering Marketing Attribution Models\n\nIn today's complex digital landscape, understanding which marketing efforts drive conversions is more challenging—and more essential—than ever. Attribution modeling provides the framework to assign credit to touchpoints along the customer journey, but choosing and implementing the right model can make the difference between strategic insight and misleading data.\n\nUnderstanding Attribution Fundamentals\n\nThe Attribution Challenge\n\nModern customer journeys are rarely linear. Before converting, a typical customer might:\n\n1. Discover your brand through a social media ad\n2. Later search for your brand name and visit your website\n3. Sign up for your email list\n4. Click on a retargeting ad\n5. Return via direct traffic to complete a purchase\n\nWhich of these touchpoints deserves credit for the conversion? This is the fundamental question attribution modeling answers.\n\nWhy Attribution Matters\n\nAccurate attribution impacts virtually every aspect of marketing success:\n\nBudget allocation: Directing resources to channels with the highest ROI\nCampaign optimization: Refining messaging and targeting based on performance\nCustomer journey design: Identifying and strengthening critical touchpoints\nMarketing technology investments: Justifying tech stack decisions with clear ROI data\n\nTraditional Attribution Models Explained\n\nSingle-Touch Attribution Models\n\nFirst-Touch Attribution\n\nIn this model, 100% of the conversion credit goes to the first touchpoint where a customer discovered your brand.\n\nStrengths:\nHighlights effective top-of-funnel channels\nSimple to implement and understand\nHelps identify which channels are best for acquisition\n\nWeaknesses:\nIgnores all subsequent interactions\nOvervalues awareness-stage marketing\nCan lead to underinvestment in conversion-focused channels\n\nLast-Touch Attribution\n\nThis model assigns 100% of the conversion credit to the final touchpoint before conversion.\n\nStrengths:\nEasy to implement in most analytics platforms\nClearly identifies conversion-driving channels\nSimplifies reporting\n\nWeaknesses:\nCompletely ignores the customer journey\nTends to overvalue bottom-of-funnel tactics\nCan lead to underinvestment in awareness and consideration channels\n\nMulti-Touch Attribution Models\n\nLinear Attribution\n\nThis model distributes credit equally across all touchpoints in the customer journey.\n\nStrengths:\nAcknowledges every interaction's contribution\nSimple to understand and explain to stakeholders\nBetter than single-touch for complex journeys\n\nWeaknesses:\nDoesn't distinguish between high and low-impact touchpoints\nCan overvalue minor interactions\nLacks nuance for strategic decision-making\n\nTime-Decay Attribution\n\nThis model gives more credit to touchpoints closer to conversion, with a gradual decrease in credit for earlier touchpoints.\n\nStrengths:\nRecognizes the full journey while emphasizing conversion-driving interactions\nAccounts for recency effect in decision-making\nMore nuanced than linear or single-touch models\n\nPosition-Based (U-Shaped) Attribution\n\nThis model typically assigns 40% credit each to the first and last interaction, with the remaining 20% distributed among middle touchpoints.\n\nStrengths:\nBalances acquisition and conversion channel value\nRecognizes the important psychological impact of first and last impressions\nMore nuanced than single-touch models\n\nAdvanced Attribution Approaches\n\nData-Driven Attribution\n\nThis approach uses algorithmic modeling and machine learning to assign conversion credit based on actual data patterns rather than predetermined rules.\n\nStrengths:\nBased on your actual data rather than generic rules\nAdapts to changing customer behavior patterns\nProvides more accurate insights for complex journeys\n\nImplementing Attribution: A Strategic Framework\n\nStep 1: Audit Your Current Measurement Approach\n\nBefore implementing a new attribution model, assess your current situation:\n\nData availability: Identify what customer journey data you currently collect\nTechnical capabilities: Evaluate your analytics tools and their attribution features\nOrganizational readiness: Assess stakeholder buy-in and understanding\n\nStep 2: Define Your Attribution Goals\n\nClarify what you want to achieve with improved attribution:\n\nBudget optimization across channels\nCustomer journey improvement\nCampaign performance evaluation\nSpecific ROI calculations for particular initiatives\n\nStep 3: Select the Right Attribution Model\n\nUse this decision framework to choose the most appropriate model for your situation:\n\nLimited data: Start with position-based or time-decay\nComplex, multi-channel journey: Data-driven or linear as starting point\nShort sales cycle: Last-touch or position-based\nHeavy brand marketing investment: First-touch or position-based\n\nConclusion\n\nAttribution modeling isn't just a technical implementation—it's a strategic asset that can transform marketing effectiveness. The right approach depends on your organization's specific needs, capabilities, and maturity.\n\nThe most successful organizations view attribution as an evolving practice rather than a one-time implementation. By continuously refining your approach based on new data, technologies, and business needs, you can build attribution capabilities that provide genuine competitive advantage in understanding and optimizing your marketing investments.",
+          "author": {
+            "name": "David Martinez",
+            "role": "Analytics Lead"
+          }
+        }
+      }
+    },
+      "contactPage": {
+        "metaTitle": "Contact EGA - Egypt's Leading Marketing Agency",
+        "metaDescription": "Reach out to EGA, Egypt's premier marketing agency. Let's discuss how we can transform your brand and achieve your digital marketing goals.",
+        "metaKeywords": "contact EGA, marketing agency Egypt, digital marketing contact, 6th of October agency",
+        "title": "Contact Us",
+        "description": "Have a project in mind? Reach out to our team and let's turn your digital marketing goals into reality.",
+        
+        "nameLabel": "Full Name",
+        "emailLabel": "Email Address",
+        "phoneLabel": "Phone Number (Optional)",
+        "messageLabel": "Your Message",
+        "subjectLabel": "Subject",
+        
+        "submitButton": "Send Message",
+        "sendingMessage": "Sending your message...",
+        "successMessage": "Your message has been sent successfully! We will get back to you soon.",
+        
+        "phoneContact": "Phone",
+        "phoneNumber": "01012333338 - 01023333576",
+        "phoneAvailability": "Available Sun-Thu, 9AM-6PM",
+        
+        "emailContact": "Email",
+        "emailAddress": "info@ega.com",
+        "emailResponse": "We'll respond within 24 hours",
+        
+        "addressContact": "Address",
+        "officeAddress": "The central Axis, the 2nd district neighborhood 2 build 383, 4nd floor, 6th of October",
+        "addressInfo": "Open for in-person meetings",
+        
+        "businessHours": "Business Hours",
+        "weekdayHours": "Sun - Thu: 9AM - 6PM",
+        "saturdayHours": "Saturday: By appointment",
+        "sundayHours": "Friday: Closed",
+        
+        "home": "Home",
+        "howCanWeHelp": "How Can We Help?",
+        "connectWithUs": "Connect With Us",
+        
+        "faqTitle": "Frequently Asked Questions",
+        "faqQuestion1": "What are your business hours?",
+        "faqAnswer1": "We are open Sunday through Thursday from 9 AM to 6 PM. On weekends, we are available by appointment only.",
+        "faqQuestion2": "How quickly can I expect a response?",
+        "faqAnswer2": "We aim to respond to all inquiries within 24 hours during business days.",
+        "faqQuestion3": "Do you offer virtual consultations?",
+        "faqAnswer3": "Yes, we offer virtual consultations via Zoom, Google Meet, or Microsoft Teams. Please specify your preference when scheduling.",
+        "faqQuestion4": "What information should I include in my message?",
+        "faqAnswer4": "Please include your name, preferred contact method, and a detailed description of your needs or questions. The more details you provide, the better we can assist you.",
+        
+        "contactForm": "Contact Form",
+        "findUs": "Find Us",
+        "sendUsMessage": "Send Us a Message",
+        "namePlaceholder": "Your full name",
+        "emailPlaceholder": "your.email@example.com",
+        "phonePlaceholder": "+20 (10) 12345678",
+        "messagePlaceholder": "How can we help you today?",
+        "selectSubject": "Select a subject",
+        "generalInquiry": "General Inquiry",
+        "supportRequest": "Support Request",
+        "partnership": "Partnership Opportunity",
+        "feedback": "Feedback",
+        "other": "Other",
+        
+        "privacyConsent": "I agree with the",
+        "privacyPolicy": "privacy policy",
+        "andConsent": "and consent to the processing of my personal data.",
+        
+        "messageSent": "Message Sent!",
+        "sendAnother": "Send Another Message",
+        "sending": "Sending...",
+        
+        "visitOffice": "Visit Our Office",
+        "officeDescription": "We're conveniently located in the 6th of October. Feel free to stop by during business hours!",
+        
+        "ourServices": "Our Services",
+        "servicesDescription": "We offer a wide range of digital marketing services to help your business grow and succeed in the digital landscape.",
+        "serviceTitle1": "Digital Marketing",
+        "serviceDescription1": "Comprehensive digital marketing strategies tailored to your business goals and target audience.",
+        "serviceTitle2": "Web Development",
+        "serviceDescription2": "Custom website development with responsive design and seamless user experience.",
+        "serviceTitle3": "Content Creation",
+        "serviceDescription3": "Engaging content creation that resonates with your audience and drives conversion.",
+        
+        "whyChooseUs": "Why Choose Us",
+        "whyChooseUsDescription": "We pride ourselves on delivering exceptional results through our unique approach and expertise.",
+        "experiencedTeam": "Experienced Team",
+        "experiencedTeamDescription": "Our team consists of industry experts with years of experience in digital marketing.",
+        "provenResults": "Proven Results",
+        "provenResultsDescription": "We have a track record of delivering measurable results for our clients.",
+        "fastTurnaround": "Fast Turnaround",
+        "fastTurnaroundDescription": "We work efficiently to deliver projects on time without compromising quality.",
+        "affordablePricing": "Affordable Pricing",
+        "affordablePricingDescription": "We offer competitive pricing with flexible packages to suit businesses of all sizes."
+      },
+    "projectsPage": {
+      "metaTitle": "Our Projects - Transforming Brands Through Digital Excellence | EGA",
+      "metaDescription": "Discover how EGA has helped businesses elevate their digital presence, engage with audiences, and achieve measurable results through strategic marketing solutions.",
+      "breadcrumbLabel": "Projects",
+      "featuredProject1Title": "Brand Redesign & Identity Refresh - Fancy",
+      "featuredProject1Description": "A complete brand overhaul for this classic men's fashion retailer, creating a modern yet timeless visual identity that appeals to both traditional customers and a new generation of fashion-conscious men.",
+      "featuredProject1Slug": "fancy-brand-redesign",
+      "featuredProject1Image": "/assets/fancy2.png",
+      "featuredProject1Date": "2024-02-15",
+      
+      "featuredProject2Title": "Digital Marketing & Export Growth - First Choice",
+      "featuredProject2Description": "A comprehensive digital marketing strategy for First Choice, a leading exporter of fresh fruits and vegetables, to expand their global presence and connect with international buyers.",
+      "featuredProject2Slug": "first-choice-export-growth",
+      "featuredProject2Image": "/assets/first choice2.png",
+      "featuredProject2Date": "2024-03-10",
+      "hero":{
+        "subheading": "Our Work",
+        "titleFirstLine": "Transforming Brands",
+        "titleSecondLine": "Through Digital Excellence",
+        "description": "Discover how we've helped businesses elevate their digital presence, engage with their audience, and achieve measurable results through strategic marketing solutions.",
+        "primaryButton": "View Projects",
+        "secondaryButton": "Our Process",
+        "featuredProject": "Featured Project",
+        "featuredProjectTitle": "Brand Transformation",
+        "scrollForDetails": "Scroll for details"
+      },
+      "featured": {
+        "subheading": "Case Studies",
+        "title": "Our Featured Projects",
+        "description": "Take a closer look at how our strategic approach and creative solutions have helped these businesses achieve remarkable results and overcome their unique challenges.",
+        "challenge": "The Challenge",
+        "solution": "Our Solution",
+        "results": "Key Results",
+        "services": "Services Provided",
+        "viewCaseStudy": "View Case Study",
+        "readyToStart": "Ready to Transform Your Brand?",
+        "ctaDescription": "Let's discuss how we can help you achieve your marketing goals and drive measurable results for your business.",
+        "contactButton": "Get in Touch",
+        "fancy": {
+          "title": "Brand Redesign & Identity Refresh",
+          "subtitle": "Men's Fashion Transformation",
+          "client": "Fancy",
+          "description": "A complete brand overhaul for this classic men's fashion retailer, creating a modern yet timeless visual identity that appeals to both traditional customers and a new generation of fashion-conscious men.",
+          "challenges": "Fancy needed to modernize their brand while retaining the classic elegance their loyal customers appreciated. The challenge was maintaining brand recognition while positioning them for future growth.",
+          "solutions": "We created a refreshed visual identity with a modernized logo, refined color palette, and versatile branding system that works across digital and physical touchpoints.",
+          "results": [
+            { "metric": "Brand Recall", "value": "+72%" },
+            { "metric": "New Customer Acquisition", "value": "+45%" },
+            { "metric": "Social Media Engagement", "value": "+156%" }
+          ],
+          "services": ["Brand Strategy", "Visual Identity", "Packaging Design", "Style Guide Development"]
+        },
+        "firstChoice": {
+          "title": "Digital Marketing & Export Growth",
+          "subtitle": "Fresh Produce Global Expansion",
+          "client": "First Choice",
+          "description": "A comprehensive digital marketing strategy for First Choice, a leading exporter of fresh fruits and vegetables, to expand their global presence and connect with international buyers.",
+          "challenges": "First Choice needed to showcase their product quality and reliability to potential international buyers while navigating the complexities of multi-market communications.",
+          "solutions": "We developed a digital strategy emphasizing product quality, sustainable farming practices, and reliable export capabilities through targeted content and virtual showcases.",
+          "results": [
+            { "metric": "Export Market Growth", "value": "+43%" },
+            { "metric": "Lead Generation", "value": "+87%" },
+            { "metric": "International Conversions", "value": "+65%" }
+          ],
+          "services": ["Digital Strategy", "Content Marketing", "International SEO", "Virtual Trade Shows"]
+        }
+      }      
+    }
+  }
