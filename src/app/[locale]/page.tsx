@@ -11,33 +11,62 @@ import LatestBlogPosts from '@/components/home/LatestBlogPosts';
 import OrganizationSchema from '@/components/schemas/OrganizationSchema';
 
 // Generate metadata for the home page with localization
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.locale, namespace: 'HomePage' });
-  const isArabic = params.locale === 'ar';
+export async function generateMetadata({ params }: { params: { locale?: string } }): Promise<Metadata> {
+  // Add fallback logic for locale
+  const locale = params?.locale || 'en';
   
-  return {
-    title: t('metaTitle'), // Just the page title, template will add "| EGA"
-    description: t('metaDescription'),
-    openGraph: {
-      title: t('metaTitle'),
+  try {
+    const t = await getTranslations({ locale, namespace: 'HomePage' });
+    const isArabic = locale === 'ar';
+    
+    return {
+      title: t('metaTitle'), // Just the page title, template will add "| EGA"
       description: t('metaDescription'),
-      locale: isArabic ? 'ar_EG' : 'en_US',
-    },
-    // You can add page-specific structured data
-    alternates: {
-      languages: {
-        'en': '/en',
-        'ar': '/ar',
+      openGraph: {
+        title: t('metaTitle'),
+        description: t('metaDescription'),
+        locale: isArabic ? 'ar_EG' : 'en_US',
       },
-      canonical: `/${params.locale}`,
-    },
-  };
+      alternates: {
+        languages: {
+          'en': '/en',
+          'ar': '/ar',
+        },
+        canonical: `/${locale}`,
+      },
+    };
+  } catch (error) {
+    console.error('Failed to load translations:', error);
+    // Fallback metadata if translations fail
+    return {
+      title: 'Home',
+      description: 'Welcome to our website',
+      alternates: {
+        languages: {
+          'en': '/en',
+          'ar': '/ar',
+        },
+        canonical: `/${locale}`,
+      },
+    };
+  }
 }
 
-export default function HomePage() {
-  const t = useTranslations('HomePage');
+// Make HomePage use the client component pattern with proper parameter handling
+export default async function HomePage({ params }: { params?: { locale?: string } }) {
+  // Add fallback logic for locale
+  const locale = params?.locale || 'en';
   
-  return <>
+  // Ensure translations are loaded before rendering components
+  try {
+    // Load translations but don't pass them to components
+    // This ensures translations are available in the app's context
+    await getTranslations({ locale, namespace: 'HomePage' });
+    
+    // Now we can render the components without passing props
+    // They'll use useTranslations hook internally to access the translations
+    return (
+      <>
         <HeroSection />
         <CTASection />
         <ServicesRadial />
@@ -46,5 +75,16 @@ export default function HomePage() {
         <ClientTestimonial />
         <LatestBlogPosts />
         <OrganizationSchema />
-  </>;
+      </>
+    );
+  } catch (error) {
+    console.error('Failed to load component data:', error);
+    // Fallback UI if component data fails to load
+    return (
+      <div className="p-4">
+        <h1>Something went wrong</h1>
+        <p>We're having trouble loading this page. Please try again later.</p>
+      </div>
+    );
+  }
 }
