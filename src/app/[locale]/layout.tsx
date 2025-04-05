@@ -42,22 +42,34 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  // Ensure that the incoming `locale` is valid
-  const {locale} = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
- 
-  return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider>
+  try {
+    // Ensure that the incoming `locale` is valid
+    const resolvedParams = await params;
+    const locale = resolvedParams?.locale || 'en';
+    
+    if (!hasLocale(routing.locales, locale)) {
+      notFound();
+    }
+  
+    return (
+      <NextIntlClientProvider>
+        <div className="flex flex-col min-h-screen">
           <Navbar />
-          {children}
+          <main className="flex-grow" lang={locale}>
+            {children}
+          </main>
           <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+        </div>
+      </NextIntlClientProvider>
+    );
+  } catch (error) {
+    console.error('Error in LocaleLayout:', error);
+    // Return a simplified layout if params resolution fails
+    return (
+      <main>
+        {children}
+      </main>
+    );
+  }
 }
 
