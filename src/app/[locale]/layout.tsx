@@ -1,75 +1,78 @@
-import { NextIntlClientProvider, Locale, hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i182/routing';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  try {
-    const resolvedParams = await params;
-    const locale = resolvedParams?.locale || 'en';
-    const isArabic = locale === 'ar';
-    
-    return {
-      title: isArabic ? 'EGA - وكالة التسويق الرائدة في مصر' : undefined, // Only override for Arabic
-      description: isArabic 
-        ? 'وكالة التسويق الرائدة في مصر. امنح علامتك التجارية هوية مميزة.'
-        : undefined,
-      alternates: {
-        languages: {
-          'en': '/en',
-          'ar': '/ar',
-        },
-        canonical: `/${locale}`,
-      },
-    };
-  } catch (error) {
-    console.error('Error generating metadata:', error);
-    // Provide basic fallback metadata
-    return {
-      alternates: {
-        languages: {
-          'en': '/en',
-          'ar': '/ar',
-        },
-        canonical: '/en',
-      },
-    };
-  }
-}
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-export default async function LocaleLayout({
-  children,
-  params
-}: {
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ega-site.com"), // Replace with your actual domain
+  title: {
+    template: "%s | EGA",
+    default: "EGA - Egypt's Leading Marketing Agency", 
+  },
+  description: "The leading marketing agency in Egypt. Give your brand EGO.",
+  keywords: ["marketing", "agency", "Egypt", "branding", "advertising"],
+  creator: "EGA",
+  publisher: "EGA",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  verification: {
+    google: "google-site-verification-code", // If you have one
+  },
+};
+
+// Define the type for layout props
+type LayoutProps = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  try {
-    // Ensure that the incoming `locale` is valid
-    const resolvedParams = await params;
-    const locale = resolvedParams?.locale || 'en';
-    
-    if (!hasLocale(routing.locales, locale)) {
-      notFound();
-    }
+  params?: Promise<{ locale?: string }>;
+};
 
-    return (
-      <>
-        <NextIntlClientProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
-      </>
-    );
-  } catch (error) {
-    console.error('Error in LocaleLayout:', error);
-    // Return a simplified layout if params resolution fails
-    return (
-      <>
-        <main>{children}</main>
-      </>
-    );
+export default async function RootLayout({
+  children,
+  params,
+}: LayoutProps) {
+  // Safely handle params resolution
+  let locale = 'en';
+  let dir = 'ltr';
+  
+  if (params) {
+    try {
+      const resolvedParams = await params;
+      locale = resolvedParams?.locale || 'en';
+      dir = locale === 'ar' ? 'rtl' : 'ltr';
+    } catch (error) {
+      console.error('Error resolving params in RootLayout:', error);
+      // Use defaults if there's an error
+    }
   }
+  
+  return (
+    <html lang={locale} dir={dir}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
