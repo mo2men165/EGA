@@ -1,9 +1,16 @@
-import { NextIntlClientProvider } from 'next-intl';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
+// Define the type for layout props explicitly
+type AboutLayoutProps = {
+  params: {
+    locale: string;
+  };
+  children: React.ReactNode;
+};
+
 // Generate metadata for the about page with localization
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: AboutLayoutProps): Promise<Metadata> {
   const t = await getTranslations({ locale: params.locale, namespace: 'about' });
   const isArabic = params.locale === 'ar';
   
@@ -27,11 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   };
 }
 
-export default function AboutLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function AboutLayout({ children }: AboutLayoutProps) {
   return (
     <>
       {children}
