@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 };
  
 const withNextIntl = createNextIntlPlugin({
-  requestConfig: './src/i182/request.ts' // Adjusted path
+  requestConfig: './src/i18n/request.ts' // Adjusted path
 });
 
 export default withNextIntl(nextConfig);
