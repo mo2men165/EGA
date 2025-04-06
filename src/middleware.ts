@@ -1,6 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
-import { routing } from './i182/routing';
+import { routing } from './i18n/routing';
 
 // This function handles the redirects and sets up the locale
 export default function middleware(request: NextRequest) {

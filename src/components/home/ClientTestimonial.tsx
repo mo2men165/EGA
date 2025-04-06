@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { useRouter } from '@/i182/navigation';
+import { useRouter } from '@/i18n/navigation';
 import Image from 'next/image';
 import { fancy, firstChoice } from '../../../public/assets';
 import Link from 'next/link';

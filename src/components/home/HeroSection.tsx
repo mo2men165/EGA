@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { logo } from '../../../public/assets';
-import { useRouter } from '@/i182/navigation';
+import { useRouter } from '@/i18n/navigation';
 import Link from 'next/link';
 
 const HeroSection: React.FC = () => {

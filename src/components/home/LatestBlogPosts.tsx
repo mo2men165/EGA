@@ -5,7 +5,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from '@/i182/navigation';
+import { useRouter } from '@/i18n/navigation';
 
 const LatestBlogPosts = () => {
   const t = useTranslations('latestBlogPosts');

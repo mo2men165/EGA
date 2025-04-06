@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { useRouter } from '@/i182/navigation';
+import { useRouter } from '@/i18n/navigation';
 import Link from 'next/link';
 
 const ServicesRadial: React.FC = () => {
