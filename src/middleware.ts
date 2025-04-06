@@ -2,23 +2,19 @@ import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i18n/routing';
 
-// This function handles the redirects and sets up the locale
 export default function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const pathname = request.nextUrl.pathname;
   
-  // Redirect root path `/` to default locale
+  // Handle root path redirection
   if (pathname === '/' || pathname === '') {
-    const defaultLocale = routing.locales[0]; // usually 'en'
-    const url = new URL(`/${defaultLocale}`, request.url);
-    return NextResponse.redirect(url);
+    const defaultLocale = routing.locales[0]; 
+    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url));
   }
   
-  // Use intlMiddleware for other paths
+  // Let next-intl handle locale-aware routes
   return createMiddleware(routing)(request);
 }
 
-// Make sure this matcher is correctly configured
 export const config = {
-  // Match all paths except static assets, api routes, etc.
   matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
