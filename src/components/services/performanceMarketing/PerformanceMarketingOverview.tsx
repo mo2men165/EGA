@@ -39,7 +39,7 @@ const PerformanceMarketingOverview: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block mb-4 px-4 py-1 rounded-full bg-amber-100 text-amber-600 text-sm font-semibold dark:bg-amber-900/30 dark:text-amber-400"
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-lime-100 text-lime-600 text-sm font-semibold dark:bg-lime-900/30 dark:text-lime-400"
             whileHover={{ scale: 1.05 }}
           >
             {t('subtitle')}
@@ -81,10 +81,10 @@ const PerformanceMarketingOverview: React.FC = () => {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               {/* Decorative element */}
-              <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-amber-100 dark:bg-amber-900/20 opacity-50"></div>
+              <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-lime-100 dark:bg-lime-900/20 opacity-50"></div>
               
               <motion.div 
-                className="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mb-6 relative z-10 text-amber-600 dark:text-amber-400"
+                className="w-16 h-16 bg-lime-100 dark:bg-lime-900/30 rounded-xl flex items-center justify-center mb-6 relative z-10 text-lime-600 dark:text-lime-400"
                 whileHover={{ rotate: 5, scale: 1.05 }}
               >
                 {index === 0 && (

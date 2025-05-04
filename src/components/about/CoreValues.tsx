@@ -107,13 +107,45 @@ const CoreValues = () => {
     <section 
       id="values"
       ref={sectionRef}
-      className="relative py-24 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800"
+      className="relative py-24 bg-gradient-to-b from-blue-50 to-white  dark:from-[#0a3040] dark:to-gray-900"
     >
       {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute h-96 w-96 rounded-full bg-lime-200/30 blur-3xl -top-48 -right-48 dark:bg-lime-900/20"></div>
-        <div className="absolute h-96 w-96 rounded-full bg-blue-200/30 blur-3xl -bottom-48 -left-48 dark:bg-blue-900/20"></div>
-      </div>
+      {[...Array(15)].map((_, i) => {
+              const top = `${Math.random() * 100}%`;
+              const left = `${Math.random() * 100}%`;
+              const size = Math.random() * 20 + 10;
+              const delay = Math.random() * 5;
+              const duration = Math.random() * 15 + 20;
+              const rotate = Math.random() * 360;
+              
+              return (
+                <motion.div
+                  key={i}
+                  className="absolute rounded-lg opacity-20 dark:opacity-10"
+                  style={{ 
+                    top, 
+                    left, 
+                    width: size, 
+                    height: size,
+                    rotate: `${rotate}deg`,
+                    background: i % 2 === 0 
+                      ? 'linear-gradient(to right, #84cc16, #0d9488)' 
+                      : 'linear-gradient(to right, #1d4ed8, #0d9488)'
+                  }}
+                  animate={{
+                    y: [0, -100, 0],
+                    rotate: [`${rotate}deg`, `${rotate + 180}deg`, `${rotate + 360}deg`],
+                    opacity: [0.1, 0.2, 0.1]
+                  }}
+                  transition={{
+                    duration,
+                    delay,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              );
+            })}
 
       <div className="container relative mx-auto px-4 z-10">
         {/* Section header */}

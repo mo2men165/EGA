@@ -16,7 +16,7 @@ const LatestBlogPosts = () => {
   const blogs = [
     {
       id: 1,
-      image: '/blog-1.jpg', // Replace with your actual image path
+      image: '/assets/blog-1.png', // Replace with your actual image path
       category: t('posts.post1.category'),
       date: t('posts.post1.date'),
       title: t('posts.post1.title'),
@@ -26,12 +26,12 @@ const LatestBlogPosts = () => {
         image: '/author-1.jpg', // Replace with your actual image path
         role: t('posts.post1.author.role')
       },
-      color: 'from-violet-500 to-purple-600',
-      bgClass: 'bg-violet-500/10',
+      color: 'from-lime-500 to-teal-600',
+      bgClass: 'bg-lime-500/10',
     },
     {
       id: 2,
-      image: '/blog-2.jpg', // Replace with your actual image path
+      image: '/assets/blog-2.png', // Replace with your actual image path
       category: t('posts.post2.category'),
       date: t('posts.post2.date'),
       title: t('posts.post2.title'),
@@ -41,12 +41,12 @@ const LatestBlogPosts = () => {
         image: '/author-2.jpg', // Replace with your actual image path
         role: t('posts.post2.author.role')
       },
-      color: 'from-lime-500 to-emerald-600',
-      bgClass: 'bg-lime-500/10',
+      color: 'from-blue-700 to-teal-600',
+      bgClass: 'bg-blue-700/10',
     },
     {
       id: 3,
-      image: '/blog-3.jpg', // Replace with your actual image path
+      image: '/assets/blog-3.png', // Replace with your actual image path
       category: t('posts.post3.category'),
       date: t('posts.post3.date'),
       title: t('posts.post3.title'),
@@ -56,12 +56,12 @@ const LatestBlogPosts = () => {
         image: '/author-3.jpg', // Replace with your actual image path
         role: t('posts.post3.author.role')
       },
-      color: 'from-amber-500 to-orange-600',
-      bgClass: 'bg-amber-500/10',
+      color: 'from-lime-500 to-teal-700',
+      bgClass: 'bg-lime-500/10',
     },
     {
       id: 4,
-      image: '/blog-4.jpg', // Replace with your actual image path
+      image: '/assets/blog-4.png', // Replace with your actual image path
       category: t('posts.post4.category'),
       date: t('posts.post4.date'),
       title: t('posts.post4.title'),
@@ -71,13 +71,13 @@ const LatestBlogPosts = () => {
         image: '/author-4.jpg', // Replace with your actual image path
         role: t('posts.post4.author.role')
       },
-      color: 'from-blue-500 to-cyan-600',
-      bgClass: 'bg-blue-500/10',
+      color: 'from-blue-700 to-teal-600',
+      bgClass: 'bg-blue-700/10',
     },
   ];
 
   return (
-    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-24 dark:from-gray-800 dark:to-gray-900">
+    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-gray-900 dark:to-[#0a3040]">
       {/* Animated background particles */}
       {[...Array(20)].map((_, i) => {
         const top = `${Math.random() * 100}%`;
@@ -89,7 +89,7 @@ const LatestBlogPosts = () => {
         return (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-600"
+            className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-500"
             style={{ 
               top, 
               left, 
@@ -125,9 +125,9 @@ const LatestBlogPosts = () => {
             className="mb-4 inline-block"
           >
             <div className="relative inline-flex h-16 w-16 items-center justify-center">
-              <div className="absolute inset-0 rounded-full bg-lime-100 dark:bg-lime-900"></div>
+              <div className="absolute inset-0 rounded-full bg-[#0a3040] dark:bg-[#0a3040]"></div>
               <div className="absolute inset-0 rounded-full border-4 border-lime-500 opacity-50"></div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-lime-600 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-lime-500 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
               </svg>
             </div>
@@ -150,7 +150,7 @@ const LatestBlogPosts = () => {
           ></motion.div>
           
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300"
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.7, delay: 0.4 }}
@@ -159,18 +159,18 @@ const LatestBlogPosts = () => {
           </motion.p>
         </motion.div>
         
-        {/* Blog posts grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Blog posts grid - Changed to 2 columns instead of 4 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {blogs.map((blog, index) => (
             <motion.div
               key={blog.id}
-              className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg dark:bg-gray-800"
+              className="group relative flex flex-col overflow-hidden rounded-2xl bg-[#0a3040]/80 shadow-lg dark:bg-[#0a3040]/80 border border-gray-700"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: 0.5 + (index * 0.1) }}
               whileHover={{ 
                 y: -8,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1)",
                 transition: { 
                   type: "spring", 
                   stiffness: 300, 
@@ -180,8 +180,8 @@ const LatestBlogPosts = () => {
               }}
             >
               {/* Blog image with hover effect */}
-              <div className="relative h-48 overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-t ${blog.color} opacity-70 transition-opacity duration-500 group-hover:opacity-90 z-10`}></div>
+              <div className="relative h-64 overflow-hidden">
+                <div className={`absolute inset-0  opacity-70 transition-opacity duration-500 group-hover:opacity-90 z-10`}></div>
                 
                 <motion.div
                   className="relative h-full w-full"
@@ -191,22 +191,21 @@ const LatestBlogPosts = () => {
                   }}
                   transition={{ duration: 0.8 }}
                 >
-                  <div className="h-full w-full bg-gray-300">
-                    {/* Replace with actual Image component when you have images */}
-                    <div className="h-full w-full flex items-center justify-center text-white">
-                      {/* Placeholder - replace with Image component */}
-                      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 w-12 text-white opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                    </div>
+                  <div className="h-full w-full">
+                    {/* Uncomment and use your actual images */}
+                    <Image 
+                      src={blog.image} 
+                      alt={blog.title} 
+                      fill
+                      style={{ objectFit: 'cover' }} 
+                    />
+                    
                   </div>
                 </motion.div>
                 
                 {/* Category badge */}
                 <div className="absolute top-4 left-4 z-20">
-                  <span className={`rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-900 shadow-md`}>
+                  <span className={`rounded-full bg-[#0a3040] px-3 py-1 text-xs font-semibold text-gray-200 shadow-md border border-${index % 2 === 0 ? 'lime' : 'blue'}-500/30`}>
                     {blog.category}
                   </span>
                 </div>
@@ -214,34 +213,43 @@ const LatestBlogPosts = () => {
               
               {/* Blog content */}
               <div className="flex flex-grow flex-col p-6">
-                <div className="mb-2 flex items-center text-sm text-gray-500">
+                <div className="mb-2 flex items-center text-sm text-gray-400">
                   <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   {blog.date}
                 </div>
                 
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-lime-600 dark:group-hover:text-lime-400">
+                <h3 className="mb-3 text-xl font-bold text-white dark:text-white transition-colors duration-300 group-hover:text-lime-500 dark:group-hover:text-lime-400">
                   {blog.title}
                 </h3>
                 
-                <p className="mb-4 flex-grow text-gray-600 dark:text-gray-300">
+                <p className="mb-4 flex-grow text-gray-300 dark:text-gray-300">
                   {blog.excerpt}
                 </p>
                 
                 {/* Author info */}
                 <div className="mt-auto flex items-center">
-                  <div className="mr-3 h-10 w-10 overflow-hidden rounded-full">
-                    <div className="h-full w-full bg-gray-200 flex items-center justify-center">
-                      {/* Placeholder - replace with author image */}
+                  <div className="mr-3 h-10 w-10 overflow-hidden rounded-full border border-gray-600">
+                    <div className="h-full w-full bg-gray-700 flex items-center justify-center">
+                      {/* Uncomment and use your actual author images */}
+                      {/* <Image 
+                        src={blog.author.image} 
+                        alt={blog.author.name} 
+                        width={40}
+                        height={40}
+                        style={{ objectFit: 'cover' }} 
+                      /> */}
+                      
+                      {/* Placeholder - remove when you have real images */}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                     </div>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">{blog.author.name}</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">{blog.author.role}</p>
+                    <p className="text-sm font-medium text-gray-200 dark:text-white">{blog.author.name}</p>
+                    <p className="text-xs text-gray-400 dark:text-gray-400">{blog.author.role}</p>
                   </div>
                 </div>
               </div>
@@ -249,7 +257,7 @@ const LatestBlogPosts = () => {
               {/* Read more link with improved hover animations */}
               <div className="px-6 pb-6">
                 <div className="overflow-hidden">
-                  <Link href={`/blog/${blog.id}`} className="group inline-flex items-center font-medium text-lime-600 dark:text-lime-400">
+                  <Link href={`/blog/${blog.id}`} className="group inline-flex items-center font-medium text-lime-500 dark:text-lime-400">
                     <span className="relative">
                       <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                         {t('readMore')}
@@ -263,7 +271,7 @@ const LatestBlogPosts = () => {
                       >
                         →
                       </motion.span>
-                      <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-lime-600 transition-transform duration-300 group-hover:scale-x-100 dark:bg-lime-400"></span>
+                      <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-lime-500 transition-transform duration-300 group-hover:scale-x-100 dark:bg-lime-400"></span>
                     </span>
                   </Link>
                 </div>
@@ -285,7 +293,7 @@ const LatestBlogPosts = () => {
           transition={{ duration: 0.7, delay: 0.8 }}
         >
           <motion.button
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-emerald-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-teal-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
             whileHover={{ 
               scale: 1.05,
               transition: { type: "spring", stiffness: 400, damping: 10 }

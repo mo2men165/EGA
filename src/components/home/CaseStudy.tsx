@@ -32,9 +32,9 @@ const CaseStudyHighlights = () => {
         { metric: t('cases.case1.results.metric3.name'), value: t('cases.case1.results.metric3.value') }
       ],
       image: '/assets/fancy2.png',
-      color: 'from-violet-500 to-purple-600',
-      bgColor: 'bg-violet-500/10',
-      accent: 'violet',
+      color: 'from-lime-500 to-teal-600',
+      bgColor: 'bg-lime-500/10',
+      accent: 'lime',
     },
     {
       id: 'first-choice',
@@ -48,9 +48,9 @@ const CaseStudyHighlights = () => {
         { metric: t('cases.case2.results.metric3.name'), value: t('cases.case2.results.metric3.value') }
       ],
       image: '/assets/first choice2.png',
-      color: 'from-lime-500 to-emerald-600',
-      bgColor: 'bg-lime-500/10',
-      accent: 'lime',
+      color: 'from-blue-700 to-teal-600',
+      bgColor: 'bg-blue-700/10',
+      accent: 'blue',
     },
   ];
 
@@ -58,7 +58,7 @@ const CaseStudyHighlights = () => {
     <section 
       suppressHydrationWarning
       ref={containerRef} 
-      className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50 py-24 dark:from-gray-800 dark:to-gray-900"
+      className="relative overflow-hidden bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-gray-900 dark:to-[#0a3040]"
     >
       {/* Animated floating shapes */}
       {[...Array(15)].map((_, i) => {
@@ -80,11 +80,9 @@ const CaseStudyHighlights = () => {
               width: size, 
               height: size,
               rotate: `${rotate}deg`,
-              background: i % 3 === 0 
-                ? 'linear-gradient(to right, #60a5fa, #34d399)' 
-                : i % 3 === 1 
-                  ? 'linear-gradient(to right, #f97316, #ec4899)' 
-                  : 'linear-gradient(to right, #8b5cf6, #3b82f6)'
+              background: i % 2 === 0 
+                ? 'linear-gradient(to right, #84cc16, #0d9488)' 
+                : 'linear-gradient(to right, #1d4ed8, #0d9488)'
             }}
             animate={{
               y: [0, -100, 0],
@@ -110,7 +108,7 @@ const CaseStudyHighlights = () => {
           transition={{ duration: 0.7 }}
         >
           <motion.span 
-            className="mb-4 inline-block rounded-full bg-lime-100 px-4 py-1 text-sm font-medium text-lime-800 dark:bg-lime-900/30 dark:text-lime-400"
+            className="mb-4 inline-block rounded-full bg-[#0a3040] px-4 py-1 text-sm font-medium text-lime-500 dark:bg-[#0a3040] dark:text-lime-400 border border-lime-500/30"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -119,7 +117,7 @@ const CaseStudyHighlights = () => {
           </motion.span>
           
           <motion.h2 
-            className="mb-6 bg-gradient-to-r leading-relaxed from-lime-500 to-emerald-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-500 dark:to-emerald-600"
+            className="mb-6 bg-gradient-to-r leading-relaxed from-lime-500 to-lime-300 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -135,7 +133,7 @@ const CaseStudyHighlights = () => {
           ></motion.div>
           
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300"
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.7, delay: 0.4 }}
@@ -154,13 +152,13 @@ const CaseStudyHighlights = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: 0.5 + (index * 0.1) }}
             >
-              <div className={`relative overflow-hidden rounded-3xl shadow-xl ${study.bgColor}`}>
+              <div className={`relative overflow-hidden rounded-3xl shadow-xl bg-[#0a3040]/80 border border-${study.accent}-500/30`}>
                 <div className="flex flex-col lg:flex-row">
                   {/* Image Section */}
                   <div className="relative lg:w-7/12 xl:w-1/2">
                     <div className="relative aspect-video h-full overflow-hidden md:aspect-auto">
                       {/* Placeholder for image */}
-                      <Image src={study.image} alt='Fancy Case Study' height={300} width={900} className='h-full w-full' />
+                      <Image src={study.image} alt={`${study.client} Case Study`} height={300} width={900} className='h-full w-full' />
                       
                       {/* Decorative elements */}
                       <motion.div 
@@ -190,14 +188,14 @@ const CaseStudyHighlights = () => {
                     </div>
 
                     {/* Client badge */}
-                    <div className="absolute bottom-4 left-4 z-10 rounded-xl bg-white px-3 py-2 shadow-lg backdrop-blur-sm dark:bg-gray-800">
+                    <div className="absolute bottom-4 left-4 z-10 rounded-xl bg-[#0a3040] px-3 py-2 shadow-lg backdrop-blur-sm dark:bg-[#0a3040] border border-gray-700">
                       <div className="flex items-center gap-3">
                         <div className={`flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r ${study.color} text-white`}>
                           <span className="text-sm font-bold">{study.client.substring(0, 2)}</span>
                         </div>
                         <div>
-                          <p className="text-xs text-gray-500 dark:text-gray-400">{t('clientLabel')}</p>
-                          <p className="font-medium text-gray-900 dark:text-white">{study.client}</p>
+                          <p className="text-xs text-gray-400 dark:text-gray-400">{t('clientLabel')}</p>
+                          <p className="font-medium text-gray-200 dark:text-white">{study.client}</p>
                         </div>
                       </div>
                     </div>
@@ -205,16 +203,16 @@ const CaseStudyHighlights = () => {
 
                   {/* Content Section */}
                   <div className="p-8 lg:w-5/12 xl:w-1/2 lg:p-10 xl:p-12">
-                    <div className="mb-2 inline-flex items-center rounded-lg bg-white px-3 py-1 text-sm dark:bg-gray-800">
+                    <div className="mb-2 inline-flex items-center rounded-lg bg-[#0a3040] px-3 py-1 text-sm dark:bg-[#0a3040] border border-gray-700">
                       <span className={`mr-2 h-2 w-2 rounded-full bg-${study.accent}-500`}></span>
-                      <span className="font-medium text-gray-800 dark:text-gray-200">{study.industry}</span>
+                      <span className="font-medium text-gray-200 dark:text-gray-200">{study.industry}</span>
                     </div>
                     
-                    <h3 className={`mb-4 mt-3 text-3xl font-bold text-gray-900 lg:text-4xl dark:text-white`}>
+                    <h3 className={`mb-4 mt-3 text-3xl font-bold text-white lg:text-4xl dark:text-white`}>
                       {study.title}
                     </h3>
                     
-                    <p className="mb-8 text-gray-600 dark:text-gray-300">
+                    <p className="mb-8 text-gray-300 dark:text-gray-300">
                       {study.description}
                     </p>
 
@@ -223,10 +221,10 @@ const CaseStudyHighlights = () => {
                       {study.results.map((result, i) => (
                         <motion.div 
                           key={i}
-                          className="rounded-xl bg-white p-4 shadow-md dark:bg-gray-800"
+                          className="rounded-xl bg-[#0a3040] p-4 shadow-md dark:bg-[#0a3040] border border-gray-700"
                           whileHover={{ y: -5, transition: { duration: 0.2 } }}
                         >
-                          <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">{result.metric}</p>
+                          <p className="mb-1 text-sm text-gray-400 dark:text-gray-400">{result.metric}</p>
                           <p className={`text-2xl font-bold bg-gradient-to-r ${study.color} bg-clip-text text-transparent`}>
                             {result.value}
                           </p>
@@ -255,27 +253,6 @@ const CaseStudyHighlights = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* View all case studies button */}
-        {/* <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.7, delay: 0.8 }}
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <Link href="/case-studies" className="group relative inline-flex items-center overflow-hidden rounded-xl bg-lime-600 px-8 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:bg-lime-700 hover:shadow-xl">
-              {t('viewAllButton')}
-              <svg className="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-              <span className="absolute inset-0 -translate-x-full transform bg-white opacity-20 transition-transform duration-500 group-hover:translate-x-full"></span>
-            </Link>
-          </motion.div>
-        </motion.div> */}
       </div>
     </section>
   );

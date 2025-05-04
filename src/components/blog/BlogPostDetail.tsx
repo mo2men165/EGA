@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
 const BlogPostDetail: React.FC = () => {
@@ -32,6 +33,7 @@ const BlogPostDetail: React.FC = () => {
   const content = t(`posts.${postKey}.content`);
   const authorName = t(`posts.${postKey}.author.name`);
   const authorRole = t(`posts.${postKey}.author.role`);
+  const imagePath = `/assets/blog-${postId}.png`; // Path to the blog image
 
   // Determine the gradient color based on category
   const gradientColor = gradientColors[category] || 'from-gray-500 to-gray-600';
@@ -40,7 +42,7 @@ const BlogPostDetail: React.FC = () => {
     <section ref={containerRef} className="relative overflow-hidden md:pt-46 pt-50 bg-gradient-to-b from-white to-gray-50 py-24 dark:from-gray-900 dark:to-gray-800">
       <div className="relative z-10 container mx-auto px-4">
         {/* Post Header - No animations */}
-        <div className="mb-16 text-center">
+        <div className="mb-8 text-center">
           <div className="mb-4 inline-block">
             <span className="rounded-full bg-lime-100 px-4 py-2 text-sm font-semibold text-lime-700 dark:bg-lime-900 dark:text-lime-300">
               {category}
@@ -63,6 +65,23 @@ const BlogPostDetail: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               <span>{authorName}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog Image - Added at the top */}
+        <div className="max-w-4xl mx-auto mb-8 rounded-2xl overflow-hidden">
+          <div className="w-full">
+            <div className="relative w-full">
+              <Image 
+                src={imagePath}
+                alt={title}
+                width={1200}
+                height={800}
+                style={{ width: '100%', height: 'auto' }}
+                priority
+              />
+             
             </div>
           </div>
         </div>

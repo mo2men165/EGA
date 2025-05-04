@@ -137,13 +137,13 @@
       "ctaButton": "Get Started Today",
       "clients": {
         "client1": {
-          "name": "Mohamed Ibrahim",
+          "name": "Sameh Zaki",
           "position": "CEO & Founder",
           "company": "FANCY FIT",
           "quote": "Working with EGA was a game-changer for Fancy Fit. Their team brought fresh, innovative ideas that elevated our brand presence across social media. From strategic campaigns to compelling content and eye-catching visuals, they perfectly captured the essence of our classic men's fashion. Their expertise in branding and storytelling helped us connect with our audience on a whole new level, driving engagement and boosting our online presence. We highly recommend EGA to any brand looking to make a lasting impact in the digital space."
         },
         "client2": {
-          "name": "Ali El-Sayed",
+          "name": "Mohamed Hassan",
           "position": "CEO & Founder",
           "company": "First Choice",
           "quote": "Working with this team was a game-changer for First Choice. They took our brand to the next level with a fresh, professional identity that truly represents our commitment to quality and freshness. The packaging design, marketing materials, and social media strategy they developed helped us stand out in international markets and attract new business opportunities. Their creativity, attention to detail, and dedication made a real impact on our growth. We couldn’t have asked for a better partner!"
@@ -1962,7 +1962,7 @@
         "emailResponse": "We'll respond within 24 hours",
         
         "addressContact": "Address",
-        "officeAddress": "The central Axis, the 2nd district neighborhood 2 build 383, 4nd floor, 6th of October",
+        "officeAddress": "The central Axis, the 2nd district neighborhood 2 building 383, 4nd floor, 6th of October",
         "addressInfo": "Open for in-person meetings",
         
         "businessHours": "Business Hours",

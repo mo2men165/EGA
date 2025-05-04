@@ -14,7 +14,7 @@ const AboutHero = () => {
   return (
     <section 
       ref={heroRef}
-      className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50 py-24 pt-50 dark:from-gray-800 dark:to-gray-900"
+      className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50 py-24 pt-50 dark:from-gray-900 dark:to-[#0a3040]"
     >
       {/* Animated floating shapes */}
       {[...Array(15)].map((_, i) => {
@@ -56,7 +56,7 @@ const AboutHero = () => {
         );
       })}
 
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="container w-[95%] relative z-10 mx-auto px-4">
         <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between lg:gap-12">
           {/* Left content area */}
           <motion.div 

@@ -24,8 +24,8 @@ const ClientTestimonials = () => {
       quote: t('clients.client1.quote'),
       avatar: '/assets/avatar-male-512.webp', // Placeholder
       rating: 5,
-      bgColor: 'bg-violet-500/10',
-      accentColor: 'from-violet-500 to-purple-600',
+      bgColor: 'bg-lime-500/10',
+      accentColor: 'from-lime-500 to-teal-600',
       icon: 'social-media',
       logo: '/assets/avatar-male-512.webp', // Placeholder
     },
@@ -37,8 +37,8 @@ const ClientTestimonials = () => {
       quote: t('clients.client2.quote'),
       avatar: '/assets/avatar-male-512.webp', // Placeholder
       rating: 5,
-      bgColor: 'bg-blue-500/10',
-      accentColor: 'from-blue-500 to-cyan-600',
+      bgColor: 'bg-blue-700/10',
+      accentColor: 'from-blue-700 to-teal-600',
       icon: 'e-commerce',
       logo: '/assets/avatar-male-512.webp', // Placeholder
     }
@@ -96,7 +96,7 @@ const ClientTestimonials = () => {
   };
 
   return (
-    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-white to-blue-50 py-24 dark:from-gray-900 dark:to-gray-800">
+    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-[#0a3040] dark:to-gray-900">
       {/* Animated floating shapes */}
       {[...Array(15)].map((_, i) => {
         const top = `${Math.random() * 100}%`;
@@ -116,11 +116,9 @@ const ClientTestimonials = () => {
               width: size, 
               height: size,
               rotate: `${rotate}deg`,
-              background: i % 3 === 0 
-                ? 'linear-gradient(to right, #60a5fa, #34d399)' 
-                : i % 3 === 1 
-                  ? 'linear-gradient(to right, #f97316, #ec4899)' 
-                  : 'linear-gradient(to right, #8b5cf6, #3b82f6)'
+              background: i % 2 === 0 
+                ? 'linear-gradient(to right, #84cc16, #0d9488)' 
+                : 'linear-gradient(to right, #1d4ed8, #0d9488)'
             }}
             animate={{
               y: [0, -100, 0],
@@ -152,16 +150,16 @@ const ClientTestimonials = () => {
             className="mb-4 inline-block"
           >
             <div className="relative inline-flex h-16 w-16 items-center justify-center">
-              <div className="absolute inset-0 rounded-full bg-lime-100 dark:bg-lime-900"></div>
+              <div className="absolute inset-0 rounded-full bg-[#0a3040] dark:bg-[#0a3040]"></div>
               <div className="absolute inset-0 rounded-full border-4 border-lime-500 opacity-50"></div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-lime-500 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
             </div>
           </motion.div>
           
           <motion.h2 
-            className="mb-4 bg-gradient-to-r leading-relaxed from-lime-600 to-emerald-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
+            className="mb-4 bg-gradient-to-r leading-relaxed from-lime-500 to-lime-300 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -177,7 +175,7 @@ const ClientTestimonials = () => {
           ></motion.div>
           
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300"
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.7, delay: 0.4 }}
@@ -195,7 +193,7 @@ const ClientTestimonials = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            <div className="relative h-full overflow-hidden rounded-2xl bg-white p-1 shadow-xl dark:bg-gray-800">
+            <div className="relative h-full overflow-hidden rounded-2xl bg-[#0a3040] p-1 shadow-xl dark:bg-[#0a3040] border border-gray-700">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`testimonial-${activeIndex}`}
@@ -208,11 +206,11 @@ const ClientTestimonials = () => {
                   <div className="relative z-10 flex h-full flex-col">
                     {/* Testimonial header with company logo */}
                     <div className="mb-8 flex items-center justify-between">
-                      <div className={`inline-flex items-center rounded-xl ${testimonials[activeIndex].bgColor} px-4 py-2`}>
+                      <div className={`inline-flex items-center rounded-xl bg-[#0a3040] px-4 py-2 border border-${activeIndex % 2 === 0 ? 'lime' : 'blue'}-500/30`}>
                         <div className={`mr-2 rounded-full bg-gradient-to-r ${testimonials[activeIndex].accentColor} p-2 text-white`}>
                           {getIcon(testimonials[activeIndex].icon)}
                         </div>
-                        <span className="font-medium text-gray-800 dark:text-gray-200">{testimonials[activeIndex].company}</span>
+                        <span className="font-medium text-gray-200 dark:text-gray-200">{testimonials[activeIndex].company}</span>
                       </div>
                       <div className="flex">
                         {renderStars(testimonials[activeIndex].rating)}
@@ -222,10 +220,10 @@ const ClientTestimonials = () => {
                     {/* Testimonial quote */}
                     <div className="mb-8 flex-grow">
                       <div className="relative">
-                        <svg className="absolute -left-3 -top-3 h-10 w-10 text-blue-200 dark:text-blue-800" fill="currentColor" viewBox="0 0 32 32">
+                        <svg className={`absolute -left-3 -top-3 h-10 w-10 ${activeIndex % 2 === 0 ? 'text-lime-700' : 'text-blue-700'} dark:${activeIndex % 2 === 0 ? 'text-lime-800' : 'text-blue-800'}`} fill="currentColor" viewBox="0 0 32 32">
                           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                         </svg>
-                        <p className="relative pl-6 text-xl font-medium italic text-gray-700 dark:text-gray-200">
+                        <p className="relative pl-6 text-xl font-medium italic text-gray-200 dark:text-gray-200">
                           {testimonials[activeIndex].quote}
                         </p>
                       </div>
@@ -233,14 +231,11 @@ const ClientTestimonials = () => {
                     
                     {/* Client information */}
                     <div className="mt-auto flex items-center">
-                      <div className="mr-4 h-16 w-16 overflow-hidden rounded-full border-2 flex items-center justify-center border-blue-500">
-                        <Image src={testimonials[activeIndex].logo} alt="avatar" width={50} height={50} />
-                      </div>
                       <div>
-                        <h4 className="text-lg font-bold text-gray-900 dark:text-white">
+                        <h4 className="text-lg font-bold text-white dark:text-white">
                           {testimonials[activeIndex].name}
                         </h4>
-                        <p className="text-gray-600 dark:text-gray-400">
+                        <p className="text-gray-300 dark:text-gray-400">
                           {testimonials[activeIndex].position}
                         </p>
                       </div>
@@ -248,8 +243,8 @@ const ClientTestimonials = () => {
                   </div>
                   
                   {/* Decorative elements */}
-                  <div className="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-blue-100 opacity-30 dark:bg-blue-900"></div>
-                  <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-purple-100 opacity-30 dark:bg-purple-900"></div>
+                  <div className="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-lime-500/10 opacity-30 dark:bg-lime-500/10"></div>
+                  <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-blue-700/10 opacity-30 dark:bg-blue-700/10"></div>
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -269,7 +264,7 @@ const ClientTestimonials = () => {
                   className={`group cursor-pointer overflow-hidden rounded-xl transition-all duration-300 ${
                     activeIndex === index 
                       ? `bg-gradient-to-r ${testimonial.accentColor} text-white shadow-lg` 
-                      : `${testimonial.bgColor} hover:shadow-lg`
+                      : `bg-[#0a3040]/80 border border-${index % 2 === 0 ? 'lime' : 'blue'}-500/30 hover:shadow-lg`
                   }`}
                   onClick={() => setActiveIndex(index)}
                   whileHover={{ y: -5 }}
@@ -279,24 +274,15 @@ const ClientTestimonials = () => {
                   transition={{ duration: 0.5, delay: 0.6 + (index * 0.1) }}
                 >
                   <div className="flex items-center p-4">
-                    <div className={`mr-4 h-12 w-12 overflow-hidden rounded-full ${
-                      activeIndex === index 
-                        ? 'border-2 border-white' 
-                        : 'border-2 border-blue-500'
-                    }`}>
-                      <div className="h-full w-full">
-                        <Image src={testimonial.avatar} alt="avatar" width={50} height={50} />
-                        
-                        </div> {/* Placeholder for client avatar */}
-                    </div>
+                    
                     <div>
                       <h4 className={`font-bold ${
-                        activeIndex !== index && 'text-gray-900 dark:text-white'
+                        activeIndex !== index && 'text-gray-200 dark:text-white'
                       }`}>
                         {testimonial.name}
                       </h4>
                       <p className={`text-sm ${
-                        activeIndex !== index ? 'text-gray-600 dark:text-gray-300' : 'text-white/90'
+                        activeIndex !== index ? 'text-gray-300 dark:text-gray-300' : 'text-white/90'
                       }`}>
                         {testimonial.company}
                       </p>
@@ -336,7 +322,7 @@ const ClientTestimonials = () => {
                   <div className={`h-1 w-full transform ${
                     activeIndex === index 
                       ? 'bg-white' 
-                      : 'bg-blue-500 scale-x-0 group-hover:scale-x-100'
+                      : `${index % 2 === 0 ? 'bg-lime-500' : 'bg-blue-500'} scale-x-0 group-hover:scale-x-100`
                   } transition-transform duration-300 ease-in-out`}></div>
                 </motion.div>
               ))}
@@ -350,7 +336,7 @@ const ClientTestimonials = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <motion.button
-                className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-emerald-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+                className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-teal-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 
@@ -371,14 +357,18 @@ const ClientTestimonials = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          <h3 className="mb-8 text-center text-2xl font-bold text-gray-900 dark:text-white">
+          <h3 className="mb-8 text-center text-2xl font-bold text-white dark:text-white">
             {t('trustedByTitle')}
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
                <div className="h-full flex justify-center items-center md:gap-36 gap-24 flex-col md:flex-row w-full rounded">
-                  <Image src={firstChoice} alt="fancy fit logo" width={200} />
-                  <Image src={fancy} alt="fancy fit logo" width={200} />
+                  <div className="p-4 rounded-xl bg-white/10 backdrop-blur">
+                    <Image src={firstChoice} alt="fancy fit logo" width={200} />
                   </div>
+                  <div className="p-4 rounded-xl bg-white/10 backdrop-blur">
+                    <Image src={fancy} alt="fancy fit logo" width={200} />
+                  </div>
+               </div>
           </div>
         </motion.div>
         
@@ -389,14 +379,14 @@ const ClientTestimonials = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, delay: 1 }}
         >
-          <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
+          <h3 className="mb-6 text-2xl font-bold text-white dark:text-white">
             {t('ctaTitle')}
           </h3>
-          <p className="mx-auto mb-8 max-w-2xl text-gray-600 dark:text-gray-300">
+          <p className="mx-auto mb-8 max-w-2xl text-gray-200 dark:text-gray-300">
             {t('ctaDescription')}
           </p>
           <motion.button
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-emerald-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-teal-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >

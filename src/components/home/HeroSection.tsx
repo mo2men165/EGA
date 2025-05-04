@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div suppressHydrationWarning className="relative h-screen w-full overflow-hidden bg-blue-700 pt-24">
+    <div suppressHydrationWarning className="relative h-screen w-full overflow-hidden bg-blue-400 pt-24">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-lime-950 opacity-80"></div>
       

@@ -39,7 +39,7 @@ const BrandingOverview: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block mb-4 px-4 py-1 rounded-full bg-purple-100 text-purple-600 text-sm font-semibold dark:bg-purple-900/30 dark:text-purple-400"
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-lime-100 text-lime-600 text-sm font-semibold dark:bg-lime-900/30 dark:text-lime-400"
             whileHover={{ scale: 1.05 }}
           >
             {t('subtitle')}
@@ -81,10 +81,10 @@ const BrandingOverview: React.FC = () => {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               {/* Decorative element */}
-              <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-purple-100 dark:bg-purple-900/20 opacity-50"></div>
+              <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-lime-100 dark:bg-lime-900/20 opacity-50"></div>
               
               <motion.div 
-                className="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-6 relative z-10 text-purple-600 dark:text-purple-400"
+                className="w-16 h-16 bg-lime-100 dark:bg-lime-900/30 rounded-xl flex items-center justify-center mb-6 relative z-10 text-lime-600 dark:text-lime-400"
                 whileHover={{ rotate: 5, scale: 1.05 }}
               >
                 {index === 0 && (
@@ -116,12 +116,16 @@ const BrandingOverview: React.FC = () => {
                 {t(`cards.${index}.description`)}
               </p>
               
-              
+              <motion.div 
+                className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-lime-500 to-teal-600"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              />
             </motion.div>
           ))}
         </motion.div>
-        
-        
       </div>
     </section>
   );

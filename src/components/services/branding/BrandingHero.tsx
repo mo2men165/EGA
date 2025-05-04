@@ -20,11 +20,11 @@ const BrandingHero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] pt-46 bg-gradient-to-b from-purple-50 via-purple-50 to-white pb-16 md:pb-24 flex items-center dark:from-purple-950 dark:via-gray-900 dark:to-gray-900">
+    <section className="relative min-h-[90vh] pt-46 bg-gradient-to-b from-lime-50 via-lime-50 to-white pb-16 md:pb-24 flex items-center dark:from-lime-950 dark:via-gray-900 dark:to-gray-900">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className="absolute -right-20 -top-20 h-64 md:h-96 w-64 md:w-96 rounded-full bg-purple-500 opacity-10 blur-3xl"
+          className="absolute -right-20 -top-20 h-64 md:h-96 w-64 md:w-96 rounded-full bg-lime-500 opacity-10 blur-3xl"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ 
             opacity: [0.05, 0.15, 0.05],
@@ -35,7 +35,7 @@ const BrandingHero: React.FC = () => {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute bottom-0 left-1/4 h-64 md:h-96 w-64 md:w-96 rounded-full bg-indigo-500 opacity-10 blur-3xl"
+          className="absolute bottom-0 left-1/4 h-64 md:h-96 w-64 md:w-96 rounded-full bg-teal-600 opacity-10 blur-3xl"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ 
             opacity: [0.05, 0.15, 0.05],
@@ -51,7 +51,7 @@ const BrandingHero: React.FC = () => {
           {[...Array(15)].map((_, index) => (
             <motion.div
               key={index}
-              className="absolute h-2 w-2 rounded-full bg-purple-400 dark:bg-purple-500"
+              className="absolute h-2 w-2 rounded-full bg-lime-400 dark:bg-lime-500"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -84,8 +84,8 @@ const BrandingHero: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.span 
-                className="inline-block rounded-full bg-purple-100 px-5 py-2 text-sm font-semibold text-purple-600 dark:bg-purple-900/30 dark:text-purple-400"
-                whileHover={{ scale: 1.05, backgroundColor: "#f3e8ff" }}
+                className="inline-block rounded-full bg-lime-100 px-5 py-2 text-sm font-semibold text-lime-600 dark:bg-lime-900/30 dark:text-lime-400"
+                whileHover={{ scale: 1.05, backgroundColor: "#ecfccb" }}
               >
                 {t('subtitle')}
               </motion.span>
@@ -107,7 +107,7 @@ const BrandingHero: React.FC = () => {
                 {t('titleLine1')}
               </motion.span>
               <motion.span 
-                className="mt-2 md:mt-3 block bg-gradient-to-r from-purple-500 via-indigo-500 to-violet-500 bg-clip-text text-transparent dark:from-purple-400 dark:via-indigo-400 dark:to-violet-300"
+                className="mt-2 md:mt-3 block bg-gradient-to-r from-lime-500 via-lime-600 to-teal-600 bg-clip-text text-transparent dark:from-lime-400 dark:via-lime-500 dark:to-teal-400"
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
@@ -135,7 +135,7 @@ const BrandingHero: React.FC = () => {
             >
               <motion.button
                 onClick={() => scrollToSection('process')}
-                className="rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-medium text-white shadow-lg transition-all hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                className="rounded-lg bg-gradient-to-r from-lime-500 to-teal-600 px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-medium text-white shadow-lg transition-all hover:from-lime-600 hover:to-teal-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
                 whileHover={{ 
                   y: -5, 
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
@@ -148,7 +148,7 @@ const BrandingHero: React.FC = () => {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection('pricing')}
-                className="rounded-lg border-2 border-gray-300 bg-white/80 backdrop-blur-sm px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-medium text-gray-700 shadow-lg transition-all hover:bg-white hover:border-purple-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:border-purple-700 dark:focus:ring-offset-gray-900"
+                className="rounded-lg border-2 border-gray-300 bg-white/80 backdrop-blur-sm px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-medium text-gray-700 shadow-lg transition-all hover:bg-white hover:border-lime-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:border-lime-700 dark:focus:ring-offset-gray-900"
                 whileHover={{ 
                   y: -5, 
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
@@ -218,7 +218,7 @@ const BrandingHero: React.FC = () => {
                     }}
                     transition={{ duration: 2, ease: "easeOut" }}
                   >
-                    <div className="w-32 h-32 rounded-full bg-purple-600 flex items-center justify-center shadow-lg">
+                    <div className="w-32 h-32 rounded-full bg-lime-600 flex items-center justify-center shadow-lg">
                       <span className="text-4xl font-bold text-white">B&I</span>
                     </div>
                     <motion.div 
@@ -268,7 +268,7 @@ const BrandingHero: React.FC = () => {
                           }
                         }}
                       >
-                        <div className={`w-16 h-16 flex items-center justify-center rounded-lg shadow-md bg-white dark:bg-gray-700 text-purple-600 dark:text-purple-400`}>
+                        <div className={`w-16 h-16 flex items-center justify-center rounded-lg shadow-md bg-white dark:bg-gray-700 text-lime-600 dark:text-lime-400`}>
                           {/* Different brand elements */}
                           {i === 0 && (
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -309,7 +309,7 @@ const BrandingHero: React.FC = () => {
                     {[...Array(3)].map((_, i) => (
                       <motion.div
                         key={i}
-                        className="w-10 h-10 flex items-center justify-center rounded-lg shadow-md bg-white dark:bg-gray-700 text-purple-600 dark:text-purple-400"
+                        className="w-10 h-10 flex items-center justify-center rounded-lg shadow-md bg-white dark:bg-gray-700 text-lime-600 dark:text-lime-400"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 + (i * 0.2), duration: 0.5 }}
@@ -330,7 +330,7 @@ const BrandingHero: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.2, duration: 0.6 }}
                   >
-                    {['bg-purple-600', 'bg-indigo-500', 'bg-violet-400', 'bg-gray-800', 'bg-gray-200'].map((color, index) => (
+                    {['bg-lime-600', 'bg-lime-500', 'bg-teal-600', 'bg-gray-800', 'bg-gray-200'].map((color, index) => (
                       <motion.div 
                         key={index} 
                         className={`w-6 h-6 md:w-8 md:h-8 rounded-full ${color} shadow-md`}

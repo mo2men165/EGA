@@ -21,8 +21,8 @@ const ServicesRadial: React.FC = () => {
       ),
       title: t('services.branding.title'),
       description: t('services.branding.description'),
-      color: 'from-purple-500 to-indigo-600',
-      textColor: 'text-purple-600 dark:text-purple-400',
+      color: 'from-lime-500 to-teal-600',
+      textColor: 'text-lime-500 dark:text-lime-400',
       link: '/services/branding'
     },
     {
@@ -34,8 +34,8 @@ const ServicesRadial: React.FC = () => {
       ),
       title: t('services.mediaProduction.title'),
       description: t('services.mediaProduction.description'),
-      color: 'from-lime-500 to-emerald-600',
-      textColor: 'text-lime-600 dark:text-lime-400',
+      color: 'from-blue-700 to-teal-600',
+      textColor: 'text-blue-600 dark:text-blue-400',
       link: '/services/media-production'
     },
     {
@@ -46,8 +46,8 @@ const ServicesRadial: React.FC = () => {
       ),
       title: t('services.softwareWeb.title'),
       description: t('services.softwareWeb.description'),
-      color: 'from-rose-500 to-pink-600',
-      textColor: 'text-rose-600 dark:text-rose-400',
+      color: 'from-lime-500 to-teal-700',
+      textColor: 'text-lime-500 dark:text-lime-400',
       link: '/services/web-solutions'
     },
     {
@@ -58,7 +58,7 @@ const ServicesRadial: React.FC = () => {
       ),
       title: t('services.socialMediaMarketing.title'),
       description: t('services.socialMediaMarketing.description'),
-      color: 'from-blue-500 to-cyan-600',
+      color: 'from-blue-700 to-teal-600',
       textColor: 'text-blue-600 dark:text-blue-400',
       link: '/services/social-media'
     },
@@ -71,14 +71,14 @@ const ServicesRadial: React.FC = () => {
       ),
       title: t('services.performanceMarketing.title'),
       description: t('services.performanceMarketing.description'),
-      color: 'from-amber-500 to-orange-600',
-      textColor: 'text-amber-600 dark:text-amber-400',
+      color: 'from-lime-500 to-teal-600',
+      textColor: 'text-lime-500 dark:text-lime-400',
       link: '/services/performance-marketing'
     },
   ];
 
   return (
-    <section suppressHydrationWarning className="bg-gray-50 py-24 dark:bg-gray-900">
+    <section suppressHydrationWarning className="bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-gray-900 dark:to-[#0a3040]">
       <div className="container mx-auto px-4">
         <motion.div 
           className="mb-16 text-center"
@@ -97,7 +97,7 @@ const ServicesRadial: React.FC = () => {
             {t('tagline')}
           </motion.span>
           <motion.h2 
-            className="relative mb-6 leading-relaxed bg-gradient-to-r from-lime-600 to-emerald-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
+            className="relative mb-6 leading-relaxed bg-gradient-to-r from-lime-500 to-lime-300 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -113,7 +113,7 @@ const ServicesRadial: React.FC = () => {
             ></motion.span>
           </motion.h2>
           <motion.p 
-            className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300"
+            className="mx-auto max-w-2xl text-lg text-gray-200 dark:text-gray-300"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -130,7 +130,7 @@ const ServicesRadial: React.FC = () => {
             <div className="relative h-[400px] w-[400px] mx-auto">
               {/* Center circle */}
               <motion.div 
-                className="absolute left-1/2 top-1/2 z-10 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg dark:bg-gray-800"
+                className="absolute left-1/2 top-1/2 z-10 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#0a3040] shadow-lg dark:bg-[#0a3040] border border-lime-500"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ 
@@ -142,7 +142,7 @@ const ServicesRadial: React.FC = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-center">
-                  <h3 className="font-bold text-gray-900 dark:text-white">Our</h3>
+                  <h3 className="font-bold text-gray-200 dark:text-white">Our</h3>
                   <p className="text-xl font-bold text-lime-500">Services</p>
                 </div>
               </motion.div>
@@ -158,7 +158,7 @@ const ServicesRadial: React.FC = () => {
                   <React.Fragment key={index}>
                     {/* Connection line */}
                     <motion.div 
-                      className={`absolute left-1/2 top-1/2 h-px w-28 -translate-x-[1px] -translate-y-1/2 bg-gray-200 dark:bg-gray-700`}
+                      className={`absolute left-1/2 top-1/2 h-px w-28 -translate-x-[1px] -translate-y-1/2 bg-lime-500/40 dark:bg-lime-500/40`}
                       style={{ 
                         transformOrigin: "0 50%",
                         rotate: `${(index * (360 / services.length))}deg`,
@@ -190,12 +190,12 @@ const ServicesRadial: React.FC = () => {
                       viewport={{ once: true }}
                     >
                       <motion.div
-                        className={`group flex h-16 w-16 sm:h-20 sm:w-20 cursor-pointer items-center justify-center rounded-full bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 ${activeService === index ? 'ring-2 ring-lime-500 ring-offset-2 dark:ring-offset-gray-900' : ''}`}
+                        className={`group flex h-16 w-16 sm:h-20 sm:w-20 cursor-pointer items-center justify-center rounded-full bg-[#0a3040] shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-[#0a3040] border border-lime-500/50 ${activeService === index ? 'ring-2 ring-lime-500 ring-offset-2 dark:ring-offset-gray-900' : ''}`}
                         onClick={() => setActiveService(index)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <div className={`transition-colors duration-300 ${service.textColor} group-hover:text-lime-500`}>
+                        <div className={`transition-colors duration-300 ${index % 2 === 0 ? 'text-lime-500' : 'text-blue-500'} group-hover:text-white`}>
                           {service.icon}
                         </div>
                       </motion.div>
@@ -235,7 +235,7 @@ const ServicesRadial: React.FC = () => {
                       {services[activeService].description}
                     </p>
                     <div className="mt-auto text-center">
-                      <button className="rounded-full border border-white/80 px-6 py-2 text-base font-medium transition-colors hover:bg-white hover:text-lime-600 cursor-pointer"
+                      <button className="rounded-full border border-white/80 px-6 py-2 text-base font-medium transition-colors hover:bg-white hover:text-[#0a3040] cursor-pointer"
                       onClick={() => router.push(`${services[activeService].link}`)}>
                         <Link href={services[activeService].link} passHref>
                         {t(`learnMore`)}
@@ -258,7 +258,7 @@ const ServicesRadial: React.FC = () => {
         >
           <motion.a
             href="/services"
-            className="group inline-flex items-center font-medium text-lime-600 transition-all hover:text-lime-700 dark:text-lime-400 dark:hover:text-lime-300"
+            className="group inline-flex items-center font-medium text-lime-500 transition-all hover:text-lime-400 dark:text-lime-400 dark:hover:text-lime-300"
             whileHover={{ x: 5 }}
           >
             {t('viewAllServices')} 

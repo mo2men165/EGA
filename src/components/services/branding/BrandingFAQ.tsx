@@ -60,7 +60,7 @@ const FaqSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block mb-4 px-4 py-1 rounded-full bg-purple-100 text-purple-600 text-sm font-semibold dark:bg-purple-900/30 dark:text-purple-400"
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-lime-100 text-liem-600 text-sm font-semibold dark:bg-lime-900/30 dark:text-lime-400"
             whileHover={{ scale: 1.05 }}
           >
             {t('subtitle')}
@@ -120,7 +120,7 @@ const FaqSection: React.FC = () => {
                   </h3>
                   <div className={`flex-shrink-0 ml-4 w-6 h-6 rounded-full flex items-center justify-center border transition-colors duration-300 ${
                     openIndex === index 
-                      ? 'bg-purple-600 dark:bg-purple-500 text-white border-purple-600 dark:border-purple-500' 
+                      ? 'bg-lime-600 dark:bg-lime-500 text-white border-lime-600 dark:border-lime-500' 
                       : 'bg-white dark:bg-gray-600 text-gray-500 dark:text-gray-300 border-gray-300 dark:border-gray-600'
                   }`}>
                     <svg 
@@ -169,7 +169,7 @@ const FaqSection: React.FC = () => {
                                 <li key={linkIndex}>
                                   <a 
                                     href={t(`questions.${index}.links.${linkIndex}.url`)}
-                                    className="text-sm text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 flex items-center"
+                                    className="text-sm text-lime-600 dark:text-lime-400 hover:text-lime-800 dark:hover:text-lime-300 flex items-center"
                                   >
                                     <svg 
                                       xmlns="http://www.w3.org/2000/svg" 
@@ -220,7 +220,7 @@ const FaqSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
               href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-xl shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors duration-300 w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-lime-600 border border-transparent rounded-xl shadow-lg hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-colors duration-300 w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

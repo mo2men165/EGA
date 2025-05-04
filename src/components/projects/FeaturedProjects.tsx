@@ -33,7 +33,7 @@ const FeaturedProjects = () => {
   // Use combined visibility state
   const shouldShow = isInView || isVisible;
   
-  // Featured projects data
+  // Featured projects data - updated colors to match case study highlights
   const projects = [
     {
       id: 'fancy-rebrand',
@@ -50,9 +50,9 @@ const FeaturedProjects = () => {
       ],
       services: ['Brand Strategy', 'Visual Identity', 'Packaging Design', 'Style Guide Development'],
       mainImage: '/assets/fancy2.png',
-      color: 'from-violet-500 to-purple-600',
-      bgColor: 'bg-violet-500/10',
-      textColor: 'text-violet-500'
+      color: 'from-lime-500 to-teal-600',
+      bgColor: 'bg-lime-500/10',
+      textColor: 'text-lime-500'
     },
     {
       id: 'first-choice',
@@ -69,9 +69,9 @@ const FeaturedProjects = () => {
       ],
       services: ['Digital Strategy', 'Content Marketing', 'International SEO', 'Virtual Trade Shows'],
       mainImage: '/assets/first choice2.png',
-      color: 'from-lime-500 to-emerald-600',
-      bgColor: 'bg-lime-500/10',
-      textColor: 'text-lime-600'
+      color: 'from-blue-700 to-teal-600',
+      bgColor: 'bg-blue-700/10',
+      textColor: 'text-blue-600'
     }
   ];
 
@@ -79,7 +79,7 @@ const FeaturedProjects = () => {
     <section 
       ref={containerRef}
       id='featured-projects'
-      className="py-12 md:py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
+      className="py-12 md:py-24 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-[#0a3040]"
     >
       <div className="container mx-auto px-4">
         <motion.div 

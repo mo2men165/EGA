@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogPost {
   id: number;
@@ -28,9 +29,11 @@ const BlogPage: React.FC = () => {
   const isInView = useInView(containerRef, { once: false, amount: 0.2 });
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Generate blog posts from translations
+  // Generate blog posts from translations with alternating colors
   const blogPosts: BlogPost[] = [1, 2, 3, 4].map((id) => {
     const postKey = `post${id}`;
+    const isEven = id % 2 === 0;
+    
     return {
       id,
       category: t(`posts.${postKey}.category`),
@@ -42,19 +45,13 @@ const BlogPage: React.FC = () => {
         name: t(`posts.${postKey}.author.name`),
         role: t(`posts.${postKey}.author.role`)
       },
-      image: `/blog-${id}.jpg`,
-      color: [
-        'from-violet-500 to-purple-600',
-        'from-lime-500 to-emerald-600',
-        'from-amber-500 to-orange-600',
-        'from-blue-500 to-cyan-600'
-      ][id - 1],
-      bgClass: [
-        'bg-violet-500/10',
-        'bg-lime-500/10',
-        'bg-amber-500/10',
-        'bg-blue-500/10'
-      ][id - 1],
+      image: `/assets/blog-${id}.png`,
+      color: isEven
+        ? 'from-blue-700 to-teal-600'
+        : 'from-lime-500 to-teal-600',
+      bgClass: isEven
+        ? 'bg-blue-700/10'
+        : 'bg-lime-500/10',
       tags: ['Digital Marketing', t(`posts.${postKey}.category`)]
     };
   });
@@ -68,12 +65,12 @@ const BlogPage: React.FC = () => {
     : blogPosts;
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden pt-46 bg-gradient-to-b from-white to-gray-50 py-24 dark:from-gray-900 dark:to-gray-800">
+    <section ref={containerRef} className="relative overflow-hidden pt-46 bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-[#0a3040] dark:to-gray-900">
       {/* Animated background particles */}
       {[...Array(20)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-600"
+          className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-500"
           style={{ 
             top: `${Math.random() * 100}%`, 
             left: `${Math.random() * 100}%`, 
@@ -101,11 +98,11 @@ const BlogPage: React.FC = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="mb-4 bg-gradient-to-r from-lime-600 to-emerald-600 leading-relaxed bg-clip-text text-5xl font-bold text-transparent dark:from-lime-400 dark:to-emerald-400">
+          <h1 className="mb-4 bg-gradient-to-r from-lime-500 to-lime-300 leading-relaxed bg-clip-text text-5xl font-bold text-transparent dark:from-lime-400 dark:to-lime-200">
             {t('title')}
           </h1>
           
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 dark:text-gray-300">
             {t('description')}
           </p>
         </motion.div>
@@ -122,7 +119,7 @@ const BlogPage: React.FC = () => {
             className={`px-4 py-2 rounded-full transition-all duration-300 ${
               selectedCategory === null 
                 ? 'bg-lime-500 text-white' 
-                : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                : 'bg-[#0a3040] text-gray-300 dark:bg-[#0a3040] dark:text-gray-300 hover:bg-[#0a3040]/80 dark:hover:bg-[#0a3040]/80 border border-gray-700'
             }`}
           >
             {t('allCategories')}
@@ -134,7 +131,7 @@ const BlogPage: React.FC = () => {
               className={`px-4 py-2 rounded-full transition-all duration-300 ${
                 selectedCategory === category 
                   ? 'bg-lime-500 text-white' 
-                  : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                  : 'bg-[#0a3040] text-gray-300 dark:bg-[#0a3040] dark:text-gray-300 hover:bg-[#0a3040]/80 dark:hover:bg-[#0a3040]/80 border border-gray-700'
               }`}
             >
               {category}
@@ -143,17 +140,17 @@ const BlogPage: React.FC = () => {
         </motion.div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredPosts.map((blog, index) => (
             <motion.div
               key={blog.id}
-              className="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg dark:bg-gray-800"
+              className="group relative flex flex-col overflow-hidden rounded-2xl bg-[#0a3040]/80 shadow-lg dark:bg-[#0a3040]/80 border border-gray-700"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: 0.5 + (index * 0.1) }}
               whileHover={{ 
                 y: -8,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1)",
                 transition: { 
                   type: "spring", 
                   stiffness: 300, 
@@ -163,14 +160,23 @@ const BlogPage: React.FC = () => {
               }}
             >
               {/* Blog Image */}
-              <div className="relative h-48 overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-t ${blog.color} opacity-70 transition-opacity duration-500 group-hover:opacity-90 z-10`}></div>
+              <div className="relative h-64 overflow-hidden">
+                <div className={`absolute inset-0  opacity-70 transition-opacity duration-500 group-hover:opacity-90 z-10`}></div>
+                
+                <Image 
+                  src={blog.image} 
+                  alt={blog.title} 
+                  fill
+                  style={{ objectFit: 'cover' }} 
+                />
+                
+                
                 
                 <div className="absolute top-4 left-4 z-20 flex space-x-2">
                   {blog.tags.map((tag) => (
                     <span 
                       key={tag} 
-                      className="rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-gray-900 shadow-md"
+                      className="rounded-full bg-[#0a3040] px-3 py-1 text-xs font-semibold text-gray-200 shadow-md border border-gray-700"
                     >
                       {tag}
                     </span>
@@ -180,38 +186,39 @@ const BlogPage: React.FC = () => {
               
               {/* Blog Content */}
               <div className="flex flex-grow flex-col p-6">
-                <div className="mb-2 flex items-center text-sm text-gray-500">
+                <div className="mb-2 flex items-center text-sm text-gray-400">
                   <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   {blog.date}
                 </div>
                 
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-lime-600 dark:group-hover:text-lime-400">
+                <h3 className="mb-3 text-xl font-bold text-white dark:text-white transition-colors duration-300 group-hover:text-lime-500 dark:group-hover:text-lime-400">
                   {blog.title}
                 </h3>
                 
-                <p className="mb-4 flex-grow text-gray-600 dark:text-gray-300">
+                <p className="mb-4 flex-grow text-gray-300 dark:text-gray-300">
                   {blog.excerpt}
                 </p>
                 
                 {/* Author Info */}
                 <div className="mt-auto flex items-center">
-                  <div className="mr-3 h-10 w-10 overflow-hidden rounded-full bg-gray-200 flex items-center justify-center">
+                  <div className="mr-3 h-10 w-10 overflow-hidden rounded-full bg-gray-700 flex items-center justify-center border border-gray-600">
+                    {/* Placeholder - remove when you have author images */}
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">{blog.author.name}</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">{blog.author.role}</p>
+                    <p className="text-sm font-medium text-gray-200 dark:text-white">{blog.author.name}</p>
+                    <p className="text-xs text-gray-400 dark:text-gray-400">{blog.author.role}</p>
                   </div>
                 </div>
               </div>
               
               {/* Read More Link */}
               <div className="px-6 pb-6">
-                <Link href={`/blog/${blog.id}`} target='_blank' className="group inline-flex items-center font-medium text-lime-600 dark:text-lime-400">
+                <Link href={`/blog/${blog.id}`} target='_blank' className="group inline-flex items-center font-medium text-lime-500 dark:text-lime-400">
                   <span className="relative">
                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                       {t('readMore')}
@@ -225,7 +232,7 @@ const BlogPage: React.FC = () => {
                     >
                       →
                     </motion.span>
-                    <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-lime-600 transition-transform duration-300 group-hover:scale-x-100 dark:bg-lime-400"></span>
+                    <span className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 transform bg-lime-500 transition-transform duration-300 group-hover:scale-x-100 dark:bg-lime-400"></span>
                   </span>
                 </Link>
               </div>
@@ -243,7 +250,7 @@ const BlogPage: React.FC = () => {
           {[1, 2, 3, 4].map((page) => (
             <button
               key={page}
-              className="px-4 py-2 rounded-lg bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-lime-500 hover:text-white transition-all duration-300"
+              className="px-4 py-2 rounded-lg bg-[#0a3040] text-gray-200 dark:bg-[#0a3040] dark:text-gray-300 hover:bg-lime-500 hover:text-white transition-all duration-300 border border-gray-700"
             >
               {page}
             </button>

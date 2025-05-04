@@ -19,10 +19,10 @@ const MediaProductionHero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] pt-46 bg-gradient-to-b from-lime-50 via-lime-50 to-white pb-24 flex items-center dark:from-lime-950 dark:via-gray-900 dark:to-gray-900">
+    <section className="relative min-h-[90vh] pt-46 bg-gradient-to-b from-blue-50 via-blue-50 to-white pb-24 flex items-center dark:from-blue-950 dark:via-gray-900 dark:to-gray-900">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-lime-500 opacity-10 blur-3xl"
+          className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-blue-700 opacity-10 blur-3xl"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ 
             opacity: [0.05, 0.15, 0.05],
@@ -33,7 +33,7 @@ const MediaProductionHero: React.FC = () => {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute bottom-0 left-1/4 h-96 w-96 rounded-full bg-emerald-500 opacity-10 blur-3xl"
+          className="absolute bottom-0 left-1/4 h-96 w-96 rounded-full bg-teal-600 opacity-10 blur-3xl"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ 
             opacity: [0.05, 0.15, 0.05],
@@ -48,7 +48,7 @@ const MediaProductionHero: React.FC = () => {
           {[...Array(15)].map((_, index) => (
             <motion.div
               key={index}
-              className="absolute h-2 w-2 rounded-full bg-lime-400 dark:bg-lime-500"
+              className="absolute h-2 w-2 rounded-full bg-blue-400 dark:bg-blue-500"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -80,8 +80,8 @@ const MediaProductionHero: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.span 
-                className="inline-block rounded-full bg-lime-100 px-5 py-2 text-sm font-semibold text-lime-600 dark:bg-lime-900/30 dark:text-lime-400"
-                whileHover={{ scale: 1.05, backgroundColor: "#ecfccb" }}
+                className="inline-block rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                whileHover={{ scale: 1.05, backgroundColor: "#dbeafe" }}
               >
                 {t('subtitle')}
               </motion.span>
@@ -102,7 +102,7 @@ const MediaProductionHero: React.FC = () => {
                 {t('titleLine1')}
               </motion.span>
               <motion.span 
-                className="mt-3 block bg-gradient-to-r from-lime-500 via-emerald-500 to-emerald-600 bg-clip-text text-transparent dark:from-lime-400 dark:via-emerald-400 dark:to-emerald-300"
+                className="mt-3 block bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent dark:from-blue-500 dark:to-teal-400"
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
@@ -128,7 +128,7 @@ const MediaProductionHero: React.FC = () => {
             >
               <motion.button
                 onClick={() => scrollToSection('process')}
-                className="rounded-lg bg-gradient-to-r from-lime-500 to-emerald-600 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white shadow-lg transition-all hover:from-lime-600 hover:to-emerald-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                className="rounded-lg bg-gradient-to-r from-blue-700 to-teal-600 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white shadow-lg transition-all hover:from-blue-800 hover:to-teal-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
                 whileHover={{ 
                   y: -5, 
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
@@ -141,7 +141,7 @@ const MediaProductionHero: React.FC = () => {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection('pricing')}
-                className="rounded-lg border-2 border-gray-300 bg-white/80 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-gray-700 shadow-lg transition-all hover:bg-white hover:border-lime-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:border-lime-700 dark:focus:ring-offset-gray-900"
+                className="rounded-lg border-2 border-gray-300 bg-white/80 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-gray-700 shadow-lg transition-all hover:bg-white hover:border-blue-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800/80 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:border-blue-700 dark:focus:ring-offset-gray-900"
                 whileHover={{ 
                   y: -5, 
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
@@ -223,7 +223,7 @@ const MediaProductionHero: React.FC = () => {
                           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                         >
                           <div className="absolute inset-2 rounded-full bg-gray-900 flex items-center justify-center">
-                            <div className="w-4 h-4 rounded-full bg-lime-500"></div>
+                            <div className="w-4 h-4 rounded-full bg-blue-500"></div>
                           </div>
                         </motion.div>
                         
@@ -262,10 +262,10 @@ const MediaProductionHero: React.FC = () => {
                       }}
                       transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                     >
-                      <div className="w-24 h-24 rounded-full bg-yellow-100 opacity-20 blur-lg"></div>
+                      <div className="w-24 h-24 rounded-full bg-blue-100 opacity-20 blur-lg"></div>
                       <div className="w-16 h-16 bg-gray-600 relative">
                         <motion.div 
-                          className="absolute -top-2 -left-2 w-20 h-20 rounded-full bg-yellow-300 blur-md opacity-50"
+                          className="absolute -top-2 -left-2 w-20 h-20 rounded-full bg-blue-300 blur-md opacity-50"
                           animate={{ 
                             opacity: [0.5, 0.7, 0.5],
                             scale: [1, 1.05, 1]
@@ -283,10 +283,10 @@ const MediaProductionHero: React.FC = () => {
                       }}
                       transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                     >
-                      <div className="w-24 h-24 rounded-full bg-yellow-100 opacity-20 blur-lg"></div>
+                      <div className="w-24 h-24 rounded-full bg-blue-100 opacity-20 blur-lg"></div>
                       <div className="w-16 h-16 bg-gray-600 relative">
                         <motion.div 
-                          className="absolute -top-2 -left-2 w-20 h-20 rounded-full bg-yellow-300 blur-md opacity-50"
+                          className="absolute -top-2 -left-2 w-20 h-20 rounded-full bg-blue-300 blur-md opacity-50"
                           animate={{ 
                             opacity: [0.5, 0.7, 0.5],
                             scale: [1, 1.05, 1]
@@ -317,7 +317,7 @@ const MediaProductionHero: React.FC = () => {
                       {[...Array(12)].map((_, index) => (
                         <div key={index} className="h-full flex-none flex flex-col items-center">
                           <div className="h-full w-16 sm:w-20 bg-gray-800 mx-1 rounded-sm flex items-center justify-center overflow-hidden">
-                            <div className={`w-12 sm:w-16 h-8 sm:h-12 rounded-sm ${index % 5 === 0 ? 'bg-lime-600' : index % 5 === 1 ? 'bg-emerald-500' : index % 5 === 2 ? 'bg-teal-500' : index % 5 === 3 ? 'bg-blue-500' : 'bg-indigo-500'}`}></div>
+                            <div className={`w-12 sm:w-16 h-8 sm:h-12 rounded-sm ${index % 5 === 0 ? 'bg-blue-700' : index % 5 === 1 ? 'bg-teal-600' : index % 5 === 2 ? 'bg-cyan-500' : index % 5 === 3 ? 'bg-sky-500' : 'bg-indigo-500'}`}></div>
                           </div>
                           <div className="flex w-full justify-between px-3 mt-1">
                             <div className="w-2 h-2 rounded-full bg-gray-700"></div>
@@ -344,7 +344,7 @@ const MediaProductionHero: React.FC = () => {
                     >
                       <div className="w-full h-8 bg-gray-800 rounded-t-lg flex items-center justify-center">
                         <motion.div 
-                          className="w-4 h-4 rounded-full bg-lime-500"
+                          className="w-4 h-4 rounded-full bg-blue-500"
                           animate={{ 
                             opacity: [1, 0.6, 1],
                           }}
@@ -372,7 +372,7 @@ const MediaProductionHero: React.FC = () => {
                         <div className="h-1 flex-grow bg-gray-600 rounded-full"></div>
                       </div>
                       <div className="flex h-4 items-center mb-2">
-                        <div className="w-2 h-2 rounded-full bg-lime-500 mr-2"></div>
+                        <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
                         <div className="h-2 flex-grow bg-gray-600 rounded-full relative">
                           <motion.div 
                             className="absolute h-4 w-4 bg-white rounded-full top-1/2 transform -translate-y-1/2"
@@ -383,7 +383,7 @@ const MediaProductionHero: React.FC = () => {
                         </div>
                       </div>
                       <div className="flex h-3 items-center">
-                        <div className="w-1 h-1 rounded-full bg-blue-500 mr-2"></div>
+                        <div className="w-1 h-1 rounded-full bg-teal-500 mr-2"></div>
                         <div className="h-1 flex-grow bg-gray-600 rounded-full"></div>
                       </div>
                     </div>
@@ -396,7 +396,7 @@ const MediaProductionHero: React.FC = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.5, duration: 0.8 }}
                   >
-                    <div className="text-sm sm:text-xl font-bold text-lime-500">MEDIA PROD</div>
+                    <div className="text-sm sm:text-xl font-bold text-blue-500">MEDIA PROD</div>
                   </motion.div>
                 </div>
               </motion.div>
@@ -414,26 +414,6 @@ const MediaProductionHero: React.FC = () => {
         }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <button 
-          onClick={() => scrollToSection('overview')} 
-          className="text-gray-500 dark:text-gray-400 focus:outline-none"
-          aria-label="Scroll to overview"
-        >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
-            className="sm:w-32 sm:h-32"
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-          >
-            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-          </svg>
-        </button>
       </motion.div>
     </section>
   );

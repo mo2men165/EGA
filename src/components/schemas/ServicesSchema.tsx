@@ -15,37 +15,37 @@ const ServicesSchema = () => {
           {
             "@type": "ListItem",
             "position": 1,
-            "name": t('branding.title'),
+            "name": t('servicesList.services.branding.title'),
             "url": `${window.location.origin}/services/branding`,
-            "description": t('branding.description')
+            "description": t('servicesList.services.branding.description')
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": t('mediaProduction.title'),
+            "name": t('servicesList.services.mediaProduction.title'),
             "url": `${window.location.origin}/services/media-production`,
-            "description": t('mediaProduction.description')
+            "description": t('servicesList.services.mediaProduction.description')
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": t('performanceMarketing.title'),
+            "name": t('servicesList.services.performanceMarketing.title'),
             "url": `${window.location.origin}/services/performance-marketing`,
-            "description": t('performanceMarketing.description')
+            "description": t('servicesList.services.performanceMarketing.description')
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "name": t('socialMediaMarketing.title'),
+            "name": t('servicesList.services.socialMediaMarketing.title'),
             "url": `${window.location.origin}/services/social-media`,
-            "description": t('socialMediaMarketing.description')
+            "description": t('servicesList.services.socialMediaMarketing.description')
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "name": t('softwareWeb.title'),
+            "name": t('servicesList.services.softwareWeb.title'),
             "url": `${window.location.origin}/services/web-solutions`,
-            "description": t('softwareWeb.description')
+            "description": t('servicesList.services.softwareWeb.description')
           }
         ]
       };

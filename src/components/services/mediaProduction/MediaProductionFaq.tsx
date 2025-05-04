@@ -60,7 +60,7 @@ const FaqSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block mb-4 px-4 py-1 rounded-full bg-lime-100 text-lime-600 text-sm font-semibold dark:bg-lime-900/30 dark:text-lime-400"
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold dark:bg-blue-900/30 dark:text-blue-400"
             whileHover={{ scale: 1.05 }}
           >
             {t('subtitle')}
@@ -120,7 +120,7 @@ const FaqSection: React.FC = () => {
                   </h3>
                   <div className={`flex-shrink-0 ml-4 w-6 h-6 rounded-full flex items-center justify-center border transition-colors duration-300 ${
                     openIndex === index 
-                      ? 'bg-lime-500 dark:bg-lime-400 text-white border-lime-500 dark:border-lime-400' 
+                      ? 'bg-blue-500 dark:bg-blue-400 text-white border-blue-500 dark:border-blue-400' 
                       : 'bg-white dark:bg-gray-600 text-gray-500 dark:text-gray-300 border-gray-300 dark:border-gray-600'
                   }`}>
                     <svg 
@@ -169,7 +169,7 @@ const FaqSection: React.FC = () => {
                                 <li key={linkIndex}>
                                   <a 
                                     href={t(`questions.${index}.links.${linkIndex}.url`)}
-                                    className="text-sm text-lime-600 dark:text-lime-400 hover:text-lime-800 dark:hover:text-lime-300 flex items-center"
+                                    className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center"
                                   >
                                     <svg 
                                       xmlns="http://www.w3.org/2000/svg" 
@@ -220,7 +220,7 @@ const FaqSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
               href="#contact"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-lime-500 to-emerald-600 border border-transparent rounded-xl shadow-lg hover:from-lime-600 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-colors duration-300 w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-blue-500 to-teal-600 border border-transparent rounded-xl shadow-lg hover:from-blue-600 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300 w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

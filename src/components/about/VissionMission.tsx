@@ -14,25 +14,46 @@ const VisionMission: React.FC = () => {
     <section 
       id="vision"
       ref={sectionRef}
-      className="relative py-24 bg-white dark:bg-gray-900 overflow-x-hidden"
+      className="relative py-24 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-[#0a3040] overflow-x-hidden"
     >
       {/* Background decoration - constrained within viewport */}
-      <div className="absolute inset-0 pointer-events-none max-w-screen mx-auto overflow-hidden">
-        <svg 
-          className="absolute top-0 right-0 w-80 h-80 -mr-24 -mt-24 text-lime-100 dark:text-lime-900/20" 
-          viewBox="0 0 200 200" 
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="currentColor" d="M42.8,-73.2C54.9,-67.7,63.9,-56.1,69.9,-43.5C75.9,-30.8,78.9,-17.1,79.3,-3.3C79.7,10.4,77.5,24.2,70.8,35.3C64,46.4,52.9,54.8,40.8,61.9C28.8,69,14.4,74.7,0.6,73.8C-13.3,72.9,-26.5,65.3,-39.9,57.5C-53.3,49.7,-66.9,41.8,-73.5,30C-80.2,18.2,-80,2.7,-76.3,-11.1C-72.7,-24.9,-65.7,-37,-55.4,-42.7C-45.2,-48.5,-31.8,-47.9,-20.6,-53.5C-9.5,-59.2,-0.5,-71.1,11.1,-77.1C22.7,-83.1,30.7,-78.7,42.8,-73.2Z" transform="translate(100 100)" />
-        </svg>
-        <svg 
-          className="absolute bottom-0 left-0 w-80 h-80 -ml-24 -mb-24 text-blue-100 dark:text-blue-900/20" 
-          viewBox="0 0 200 200" 
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="currentColor" d="M45.4,-78.2C58.1,-71.3,67.3,-58.3,71.6,-44.2C75.9,-30.1,75.3,-15.1,74.9,-0.2C74.5,14.6,74.4,29.2,68.2,41C62,52.8,49.8,61.8,36.3,70C22.9,78.2,8.2,85.5,-7.4,87.6C-23,89.6,-39.5,86.4,-52.4,77.6C-65.2,68.9,-74.5,54.5,-80.1,39.3C-85.7,24.1,-87.7,8,-85.2,-6.8C-82.7,-21.6,-75.8,-35.2,-66.4,-47.2C-57,-59.1,-45.1,-69.6,-32.1,-76.4C-19.1,-83.3,-4.7,-86.6,9.5,-85.1C23.8,-83.7,32.7,-85.1,45.4,-78.2Z" transform="translate(100 100)" />
-        </svg>
-      </div>
+      
+      {[...Array(15)].map((_, i) => {
+              const top = `${Math.random() * 100}%`;
+              const left = `${Math.random() * 100}%`;
+              const size = Math.random() * 20 + 10;
+              const delay = Math.random() * 5;
+              const duration = Math.random() * 15 + 20;
+              const rotate = Math.random() * 360;
+              
+              return (
+                <motion.div
+                  key={i}
+                  className="absolute rounded-lg opacity-20 dark:opacity-10"
+                  style={{ 
+                    top, 
+                    left, 
+                    width: size, 
+                    height: size,
+                    rotate: `${rotate}deg`,
+                    background: i % 2 === 0 
+                      ? 'linear-gradient(to right, #84cc16, #0d9488)' 
+                      : 'linear-gradient(to right, #1d4ed8, #0d9488)'
+                  }}
+                  animate={{
+                    y: [0, -100, 0],
+                    rotate: [`${rotate}deg`, `${rotate + 180}deg`, `${rotate + 360}deg`],
+                    opacity: [0.1, 0.2, 0.1]
+                  }}
+                  transition={{
+                    duration,
+                    delay,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              );
+            })}
 
       <div className="container relative mx-auto px-4 z-10 max-w-[100vw]">
         {/* Vision Section */}

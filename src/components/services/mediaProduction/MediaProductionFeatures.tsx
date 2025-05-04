@@ -100,7 +100,7 @@ const MediaProductionFeatures: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block mb-4 px-4 py-1 rounded-full bg-lime-100 text-lime-600 text-sm font-semibold dark:bg-lime-900/30 dark:text-lime-400"
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold dark:bg-blue-900/30 dark:text-blue-400"
             whileHover={{ scale: 1.05 }}
           >
             {t('subtitle')}
@@ -143,7 +143,7 @@ const MediaProductionFeatures: React.FC = () => {
             >
               <div className="flex items-start mb-4">
                 <motion.div 
-                  className="w-12 h-12 bg-lime-100 dark:bg-lime-900/30 rounded-xl flex items-center justify-center mr-4 text-lime-600 dark:text-lime-400 flex-shrink-0"
+                  className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mr-4 text-blue-600 dark:text-blue-400 flex-shrink-0"
                   whileHover={{ rotate: 5, scale: 1.05 }}
                 >
                   {feature.icon}

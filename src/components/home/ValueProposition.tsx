@@ -23,8 +23,8 @@ const ValueProposition = () => {
       ),
       title: t('features.strategy.title'),
       description: t('features.strategy.description'),
-      color: 'from-violet-500 to-purple-600',
-      bgClass: 'bg-violet-500/10',
+      color: 'from-lime-500 to-teal-600',
+      bgClass: 'bg-lime-500/10',
       stats: [
         { value: '95%', label: t('features.strategy.stats.satisfaction') },
         { value: '40%', label: t('features.strategy.stats.increase') },
@@ -39,8 +39,8 @@ const ValueProposition = () => {
       ),
       title: t('features.technology.title'),
       description: t('features.technology.description'),
-      color: 'from-lime-500 to-emerald-600',
-      bgClass: 'bg-lime-500/10',
+      color: 'from-blue-700 to-teal-600',
+      bgClass: 'bg-blue-700/10',
       stats: [
         { value: '24/7', label: t('features.technology.stats.monitoring') },
         { value: '99.9%', label: t('features.technology.stats.uptime') },
@@ -55,8 +55,8 @@ const ValueProposition = () => {
       ),
       title: t('features.personalization.title'),
       description: t('features.personalization.description'),
-      color: 'from-amber-500 to-orange-600',
-      bgClass: 'bg-amber-500/10',
+      color: 'from-lime-500 to-teal-700',
+      bgClass: 'bg-lime-500/10',
       stats: [
         { value: '85%', label: t('features.personalization.stats.engagement') },
         { value: '3.5x', label: t('features.personalization.stats.conversion') },
@@ -71,8 +71,8 @@ const ValueProposition = () => {
       ),
       title: t('features.analytics.title'),
       description: t('features.analytics.description'),
-      color: 'from-blue-500 to-cyan-600', 
-      bgClass: 'bg-blue-500/10',
+      color: 'from-blue-700 to-teal-600', 
+      bgClass: 'bg-blue-700/10',
       stats: [
         { value: '100%', label: t('features.analytics.stats.transparent') },
         { value: '27%', label: t('features.analytics.stats.improvement') },
@@ -85,7 +85,7 @@ const ValueProposition = () => {
   };
 
   return (
-    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white py-24 dark:from-gray-900 dark:to-gray-800">
+    <section suppressHydrationWarning ref={containerRef} className="relative overflow-hidden bg-gradient-to-b from-[#0a3040] to-gray-700 py-24 dark:from-[#0a3040] dark:to-gray-900">
       {/* Background particles */}
       {[...Array(20)].map((_, i) => {
         const top = `${Math.random() * 100}%`;
@@ -98,7 +98,7 @@ const ValueProposition = () => {
           <motion.div
           suppressHydrationWarning
             key={i}
-            className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-600"
+            className="absolute rounded-full bg-lime-400 opacity-30 dark:bg-lime-500"
             style={{ 
               top, 
               left, 
@@ -134,16 +134,16 @@ const ValueProposition = () => {
             className="mb-4 inline-block"
           >
             <div className="relative inline-flex h-16 w-16 items-center justify-center">
-              <div className="absolute inset-0 rounded-full bg-lime-100 dark:bg-lime-900"></div>
+              <div className="absolute inset-0 rounded-full bg-[#0a3040] dark:bg-[#0a3040]"></div>
               <div className="absolute inset-0 rounded-full border-4 border-lime-500 opacity-50"></div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-lime-600 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-lime-500 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
           </motion.div>
           
           <motion.h2 
-            className="mb-4 bg-gradient-to-r leading-relaxed from-lime-600 to-emerald-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
+            className="mb-4 bg-gradient-to-r leading-relaxed from-lime-500 to-lime-300 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-lime-400 dark:to-emerald-400"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -159,7 +159,7 @@ const ValueProposition = () => {
           ></motion.div>
           
           <motion.p 
-            className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300"
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 dark:text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.7, delay: 0.4 }}
@@ -184,7 +184,7 @@ const ValueProposition = () => {
                   className={`group cursor-pointer rounded-xl p-4 shadow-md transition-all duration-300 ${
                     activeFeature === index 
                       ? `bg-gradient-to-r ${feature.color} text-white shadow-lg` 
-                      : `${feature.bgClass} hover:shadow-lg`
+                      : `bg-[#0a3040]/80 hover:shadow-lg border border-lime-500/30`
                   }`}
                   onClick={() => handleFeatureClick(index)}
                   whileHover={{ y: -5 }}
@@ -197,24 +197,24 @@ const ValueProposition = () => {
                     <div className={`rounded-lg p-2 ${
                       activeFeature === index 
                         ? 'bg-white/20' 
-                        : 'bg-white dark:bg-gray-800'
+                        : 'bg-[#0a3040] dark:bg-[#0a3040] border border-lime-500/50'
                     }`}>
                       <div className={
                         activeFeature === index 
                           ? 'text-white' 
-                          : 'text-lime-600 dark:text-lime-400'
+                          : 'text-lime-500 dark:text-lime-400'
                       }>
                         {feature.icon}
                       </div>
                     </div>
                     <div>
                       <h3 className={`text-xl font-bold ${
-                        activeFeature !== index && 'text-gray-900 dark:text-white'
+                        activeFeature !== index && 'text-gray-200 dark:text-white'
                       }`}>
                         {feature.title}
                       </h3>
                       <p className={`mt-1 text-sm ${
-                        activeFeature !== index && 'text-gray-600 dark:text-gray-300'
+                        activeFeature !== index && 'text-gray-300 dark:text-gray-300'
                       }`}>
                         {feature.description.substring(0, 80)}...
                       </p>
@@ -232,7 +232,7 @@ const ValueProposition = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            <div className="relative h-full overflow-hidden rounded-2xl bg-white p-1 shadow-xl dark:bg-gray-800">
+            <div className="relative h-full overflow-hidden rounded-2xl bg-[#0a3040] p-1 shadow-xl dark:bg-[#0a3040] border border-lime-500/30">
               <AnimatePresence mode="wait">
                 {features[activeFeature] && (
                   <motion.div
@@ -250,21 +250,21 @@ const ValueProposition = () => {
                       </div>
                       
                       {/* Feature details */}
-                      <h3 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
+                      <h3 className="mb-4 text-3xl font-bold text-white dark:text-white">
                         {features[activeFeature].title}
                       </h3>
-                      <p className="mb-8 text-lg text-gray-600 dark:text-gray-300">
+                      <p className="mb-8 text-lg text-gray-200 dark:text-gray-300">
                         {features[activeFeature].description}
                       </p>
                       
                       {/* Feature stats */}
                       <div className="grid grid-cols-2 gap-4">
                         {features[activeFeature].stats.map((stat, i) => (
-                          <div key={i} className="overflow-hidden rounded-lg bg-gray-50 p-4 text-center dark:bg-gray-700">
-                            <div className="text-3xl font-black text-lime-600 dark:text-lime-400">
+                          <div key={i} className="overflow-hidden rounded-lg bg-[#0a3040]/80 p-4 text-center dark:bg-[#0a3040]/80 border border-lime-500/30">
+                            <div className="text-3xl font-black text-lime-500 dark:text-lime-400">
                               {stat.value}
                             </div>
-                            <div className="mt-1 text-sm font-medium text-gray-600 dark:text-gray-300">
+                            <div className="mt-1 text-sm font-medium text-gray-200 dark:text-gray-300">
                               {stat.label}
                             </div>
                           </div>
@@ -288,8 +288,8 @@ const ValueProposition = () => {
                     </div>
                     
                     {/* Decorative elements */}
-                    <div className="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-gray-100 opacity-50 dark:bg-gray-700"></div>
-                    <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-gray-100 opacity-50 dark:bg-gray-700"></div>
+                    <div className="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-lime-500/10 dark:bg-lime-500/10"></div>
+                    <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-lime-500/10 dark:bg-lime-500/10"></div>
                     </motion.div>
                 )}
               </AnimatePresence>
@@ -304,14 +304,14 @@ const ValueProposition = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
+          <h3 className="mb-6 text-2xl font-bold text-white dark:text-white">
             {t('ctaTitle')}
           </h3>
-          <p className="mx-auto mb-8 max-w-2xl text-gray-600 dark:text-gray-300">
+          <p className="mx-auto mb-8 max-w-2xl text-gray-200 dark:text-gray-300">
             {t('ctaDescription')}
           </p>
           <motion.button
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-emerald-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl cursor-pointer"
+            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-lime-500 to-teal-600 px-8 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:shadow-xl cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
